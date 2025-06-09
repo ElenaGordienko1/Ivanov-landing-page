@@ -1,0 +1,20 @@
+.scroll-slider{
+    display: flex;
+    flex-direction: row;
+    overflow-y: hidden;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    transition: transform 0.3s;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+
+    
+}
+
+.scroll-slider::-webkit-scrollbar{
+    display: none;
+}
+
+.scroll-slider > *{
+    scroll-snap-align: start;
+}

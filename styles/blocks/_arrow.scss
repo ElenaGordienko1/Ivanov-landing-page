@@ -1,0 +1,18 @@
+.arrow{
+    display:flex;
+    flex-direction: row;
+    gap:12px;
+
+    &-left,
+    &-right {
+        width: 36px;
+        height: 28px;
+        background-color: var(--color-light);
+        border-radius: 6px;
+        position: relative;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
