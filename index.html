@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
     <title>Ivanov Drive</title>
 </head>
 <body>
@@ -99,7 +100,7 @@
                     <div class="hero__main">
                         <div class="hero__body">
                             <div class="hero__text">
-                                <h1 class="hero__text-title">Привезём автомобиль из Китая, Кореи и Японии</h1>
+                                <h1 class="hero__text-title">Привезём автомобиль <br> из Китая, Кореи и Японии</h1>
                                 <p class="hero__text-description">Все автомобили, которые мы доставляем, имеют необходимые документы. Мы гарантируем их качество и безопасность.</p>
                             </div>
                             <div class="hero__rating">
@@ -128,10 +129,10 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="hero__image">
+                    <div class="hero__image">
                     <div class="hero__image-block"></div>
-                    <img src="./images/car-hyundai-motor.svg" alt="" class="hero__image-car">
+                        <img src="./images/car-hyundai-motor.png" alt="" class="hero__image-car">
+                    </div>
                 </div>
             </div>
         </section>
@@ -146,251 +147,181 @@
                             </div>
                             <div class="popular-cars__arrow arrow">
                                 <div class="popular-cars__arrow-left arrow-left">
-                                    <img src="./images/arrow-left.svg" alt="">
+                                    <img class="arrow__left" src="./images/arrow-right.svg" alt="">
                                 </div>
                                 <div class="popular-cars__arrow-right arrow-right">
-                                    <img src="./images/arrow-right.svg" alt="">
+                                    <img  src="./images/arrow-right.svg" alt="">
                                 </div>
                             </div>
                         </div>
                         <div class="popular-cars__last-child">
-                            <div class="slider-cars">
-                                <div class="card">
-                                    <div class="card__active">
-                                        <img class="card__active-image" src="./images/photo-car-card.png" alt="Car" />
-                                        <div class="card__active-info">
-                                            <h2 class="card__active-title">Subaru LEVORG VN5</h2>
-                                            <ul class="card__active-characteristics">
-                                                <li class="card__active-meaning"><strong class="card__active-name">Пробег:</strong> 10 000 км</li>
-                                                <li class="card__active-meaning"><strong class="card__active-name">Руль:</strong> Левый</li>
-                                                <li class="card__active-meaning"><strong class="card__active-name">Двигатель:</strong> 3.0 л.</li>
-                                                <li class="card__active-meaning"><strong class="card__active-name">Привод:</strong> Полный</li>
-                                            </ul>
-                                            <div class="card__active-footer">
-                                                <span class="card__active-price">2 115 600 ₽</span>
-                                                <div class="card__active-contact">
-                                                    <button class="card__active-button button">Заказать</button>
-                                                    <div class="header__contact-social">
-                                                        <a href="/" class="header__social-link">
-                                                            <img src="./images/watsapp-icon.svg" alt="Whatsapp" width="36" height="36">
-                                                        </a>
-                                                        <a href="/" class="header__social-link">
-                                                            <img src="./images/telegram-icon.svg" alt="Telegram" width="36" height="36">
-                                                        </a>
+                            <section id= "mySlider" class="splide" aria-label="Splide Basic HTML Example">
+                                <div class="splide__track">
+                                    <ul class="splide__list">
+                                        <li class="splide__slide">
+                                            <div class="card">
+                                                <div class="card__active">
+                                                    <img class="card__active-image" src="./images/photo-car-card.png" alt="Car" />
+                                                    <div class="card__active-info">
+                                                        <h2 class="card__active-title">Subaru LEVORG VN5</h2>
+                                                        <p class="card__passive-description">10 000 км • Полный • 5 000 км</p>
+                                                        <ul class="card__active-characteristics">
+                                                            <li class="card__active-meaning"><strong class="card__active-name">Пробег:</strong> 10 000 км</li>
+                                                            <li class="card__active-meaning"><strong class="card__active-name">Руль:</strong> Левый</li>
+                                                            <li class="card__active-meaning"><strong class="card__active-name">Двигатель:</strong> 3.0 л.</li>
+                                                            <li class="card__active-meaning"><strong class="card__active-name">Привод:</strong> Полный</li>
+                                                        </ul>
+                                                        <div class="card__active-footer">
+                                                            <span class="card__active-price">2 115 600 ₽</span>
+                                                            <button class="card__passive-outline">Подробнее</button>
+                                                            <div class="card__active-contact">
+                                                                <button class="card__active-button button">Заказать</button>
+                                                                <div class="header__contact-social">
+                                                                    <a href="/" class="header__social-link">
+                                                                        <img src="./images/watsapp-icon.svg" alt="Whatsapp" width="36" height="36">
+                                                                    </a>
+                                                                    <a href="/" class="header__social-link">
+                                                                        <img src="./images/telegram-icon.svg" alt="Telegram" width="36" height="36">
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>  
+                                        </li>
+                                        <li class="splide__slide">
+                                            <div class="card">
+                                                <div class="card__active">
+                                                    <img class="card__active-image" src="./images/photo-car-card.png" alt="Car" />
+                                                    <div class="card__active-info">
+                                                        <h2 class="card__active-title">Subaru LEVORG VN5</h2>
+                                                        <p class="card__passive-description">10 000 км • Полный • 5 000 км</p>
+                                                        <ul class="card__active-characteristics">
+                                                            <li class="card__active-meaning"><strong class="card__active-name">Пробег:</strong> 10 000 км</li>
+                                                            <li class="card__active-meaning"><strong class="card__active-name">Руль:</strong> Левый</li>
+                                                            <li class="card__active-meaning"><strong class="card__active-name">Двигатель:</strong> 3.0 л.</li>
+                                                            <li class="card__active-meaning"><strong class="card__active-name">Привод:</strong> Полный</li>
+                                                        </ul>
+                                                        <div class="card__active-footer">
+                                                            <span class="card__active-price">2 115 600 ₽</span>
+                                                            <button class="card__passive-outline">Подробнее</button>
+                                                            <div class="card__active-contact">
+                                                                <button class="card__active-button button">Заказать</button>
+                                                                <div class="header__contact-social">
+                                                                    <a href="/" class="header__social-link">
+                                                                        <img src="./images/watsapp-icon.svg" alt="Whatsapp" width="36" height="36">
+                                                                    </a>
+                                                                    <a href="/" class="header__social-link">
+                                                                        <img src="./images/telegram-icon.svg" alt="Telegram" width="36" height="36">
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </div>
-                                    <div class="card__passive">
-                                        <div class="card__passive-body">
-                                            <img class="card__passive-image" src="./images/photo-car-card.png" alt="Car" />
-                                            <h3 class="card__passive-title">Subaru LEVORG VN5</h3>
-                                            <p class="card__passive-description">10 000 км • Полный • 5 000 км</p>
-                                            <div class="card__passive-footer">
-                                                <span class="card__passive-price">2 115 600 ₽</span>
-                                                <button class="card__passive-outline">Подробнее</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card">
-                                    <div class="card__active">
-                                        <img class="card__active-image" src="./images/photo-car-card.png" alt="Car" />
-                                        <div class="card__active-info">
-                                            <h2 class="card__active-title">Subaru LEVORG VN6</h2>
-                                            <ul class="card__active-characteristics">
-                                                <li class="card__active-meaning"><strong class="card__active-name">Пробег:</strong> 10 000 км</li>
-                                                <li class="card__active-meaning"><strong class="card__active-name">Руль:</strong> Левый</li>
-                                                <li class="card__active-meaning"><strong class="card__active-name">Двигатель:</strong> 3.0 л.</li>
-                                                <li class="card__active-meaning"><strong class="card__active-name">Привод:</strong> Полный</li>
-                                            </ul>
-                                            <div class="card__active-footer">
-                                                <span class="card__active-price">2 115 600 ₽</span>
-                                                <div class="card__active-contact">
-                                                    <button class="card__active-button button">Заказать</button>
-                                                    <div class="header__contact-social">
-                                                        <a href="/" class="header__social-link">
-                                                            <img src="./images/watsapp-icon.svg" alt="Whatsapp" width="36" height="36">
-                                                        </a>
-                                                        <a href="/" class="header__social-link">
-                                                            <img src="./images/telegram-icon.svg" alt="Telegram" width="36" height="36">
-                                                        </a>
+                                        </li>
+                                        <li class="splide__slide">
+                                            <div class="card">
+                                                <div class="card__active">
+                                                    <img class="card__active-image" src="./images/photo-car-card.png" alt="Car" />
+                                                    <div class="card__active-info">
+                                                        <h2 class="card__active-title">Subaru LEVORG VN5</h2>
+                                                        <p class="card__passive-description">10 000 км • Полный • 5 000 км</p>
+                                                        <ul class="card__active-characteristics">
+                                                            <li class="card__active-meaning"><strong class="card__active-name">Пробег:</strong> 10 000 км</li>
+                                                            <li class="card__active-meaning"><strong class="card__active-name">Руль:</strong> Левый</li>
+                                                            <li class="card__active-meaning"><strong class="card__active-name">Двигатель:</strong> 3.0 л.</li>
+                                                            <li class="card__active-meaning"><strong class="card__active-name">Привод:</strong> Полный</li>
+                                                        </ul>
+                                                        <div class="card__active-footer">
+                                                            <span class="card__active-price">2 115 600 ₽</span>
+                                                            <button class="card__passive-outline">Подробнее</button>
+                                                            <div class="card__active-contact">
+                                                                <button class="card__active-button button">Заказать</button>
+                                                                <div class="header__contact-social">
+                                                                    <a href="/" class="header__social-link">
+                                                                        <img src="./images/watsapp-icon.svg" alt="Whatsapp" width="36" height="36">
+                                                                    </a>
+                                                                    <a href="/" class="header__social-link">
+                                                                        <img src="./images/telegram-icon.svg" alt="Telegram" width="36" height="36">
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </div>
-                                    <div class="card__passive">
-                                        <div class="card__passive-body">
-                                            <img class="card__passive-image" src="./images/photo-car-card.png" alt="Car" />
-                                            <h3 class="card__passive-title">Subaru LEVORG VN6</h3>
-                                            <p class="card__passive-description">10 000 км • Полный • 5 000 км</p>
-                                            <div class="card__passive-footer">
-                                                <span class="card__passive-price">2 115 600 ₽</span>
-                                                <button class="card__passive-outline">Подробнее</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card">
-                                    <div class="card__active">
-                                        <img class="card__active-image" src="./images/photo-car-card.png" alt="Car" />
-                                        <div class="card__active-info">
-                                            <h2 class="card__active-title">Subaru LEVORG VN5</h2>
-                                            <ul class="card__active-characteristics">
-                                                <li class="card__active-meaning"><strong class="card__active-name">Пробег:</strong> 10 000 км</li>
-                                                <li class="card__active-meaning"><strong class="card__active-name">Руль:</strong> Левый</li>
-                                                <li class="card__active-meaning"><strong class="card__active-name">Двигатель:</strong> 3.0 л.</li>
-                                                <li class="card__active-meaning"><strong class="card__active-name">Привод:</strong> Полный</li>
-                                            </ul>
-                                            <div class="card__active-footer">
-                                                <span class="card__active-price">2 115 600 ₽</span>
-                                                <div class="card__active-contact">
-                                                    <button class="card__active-button button">Заказать</button>
-                                                    <div class="header__contact-social">
-                                                        <a href="/" class="header__social-link">
-                                                            <img src="./images/watsapp-icon.svg" alt="Whatsapp" width="36" height="36">
-                                                        </a>
-                                                        <a href="/" class="header__social-link">
-                                                            <img src="./images/telegram-icon.svg" alt="Telegram" width="36" height="36">
-                                                        </a>
+                                        </li>
+                                        <li class="splide__slide">
+                                            <div class="card">
+                                                <div class="card__active">
+                                                    <img class="card__active-image" src="./images/photo-car-card.png" alt="Car" />
+                                                    <div class="card__active-info">
+                                                        <h2 class="card__active-title">Subaru LEVORG VN5</h2>
+                                                        <p class="card__passive-description">10 000 км • Полный • 5 000 км</p>
+                                                        <ul class="card__active-characteristics">
+                                                            <li class="card__active-meaning"><strong class="card__active-name">Пробег:</strong> 10 000 км</li>
+                                                            <li class="card__active-meaning"><strong class="card__active-name">Руль:</strong> Левый</li>
+                                                            <li class="card__active-meaning"><strong class="card__active-name">Двигатель:</strong> 3.0 л.</li>
+                                                            <li class="card__active-meaning"><strong class="card__active-name">Привод:</strong> Полный</li>
+                                                        </ul>
+                                                        <div class="card__active-footer">
+                                                            <span class="card__active-price">2 115 600 ₽</span>
+                                                            <button class="card__passive-outline">Подробнее</button>
+                                                            <div class="card__active-contact">
+                                                                <button class="card__active-button button">Заказать</button>
+                                                                <div class="header__contact-social">
+                                                                    <a href="/" class="header__social-link">
+                                                                        <img src="./images/watsapp-icon.svg" alt="Whatsapp" width="36" height="36">
+                                                                    </a>
+                                                                    <a href="/" class="header__social-link">
+                                                                        <img src="./images/telegram-icon.svg" alt="Telegram" width="36" height="36">
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </div>
-                                    <div class="card__passive">
-                                        <div class="card__passive-body">
-                                            <img class="card__passive-image" src="./images/photo-car-card.png" alt="Car" />
-                                            <h3 class="card__passive-title">Subaru LEVORG VN5</h3>
-                                            <p class="card__passive-description">10 000 км • Полный • 5 000 км</p>
-                                            <div class="card__passive-footer">
-                                                <span class="card__passive-price">2 115 600 ₽</span>
-                                                <button class="card__passive-outline">Подробнее</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card">
-                                    <div class="card__active">
-                                        <img class="card__active-image" src="./images/photo-car-card.png" alt="Car" />
-                                        <div class="card__active-info">
-                                            <h2 class="card__active-title">Subaru LEVORG VN5</h2>
-                                            <ul class="card__active-characteristics">
-                                                <li class="card__active-meaning"><strong class="card__active-name">Пробег:</strong> 10 000 км</li>
-                                                <li class="card__active-meaning"><strong class="card__active-name">Руль:</strong> Левый</li>
-                                                <li class="card__active-meaning"><strong class="card__active-name">Двигатель:</strong> 3.0 л.</li>
-                                                <li class="card__active-meaning"><strong class="card__active-name">Привод:</strong> Полный</li>
-                                            </ul>
-                                            <div class="card__active-footer">
-                                                <span class="card__active-price">2 115 600 ₽</span>
-                                                <div class="card__active-contact">
-                                                    <button class="card__active-button button">Заказать</button>
-                                                    <div class="header__contact-social">
-                                                        <a href="/" class="header__social-link">
-                                                            <img src="./images/watsapp-icon.svg" alt="Whatsapp" width="36" height="36">
-                                                        </a>
-                                                        <a href="/" class="header__social-link">
-                                                            <img src="./images/telegram-icon.svg" alt="Telegram" width="36" height="36">
-                                                        </a>
+                                        </li>
+                                        <li class="splide__slide">
+                                            <div class="card">
+                                                <div class="card__active">
+                                                    <img class="card__active-image" src="./images/photo-car-card.png" alt="Car" />
+                                                    <div class="card__active-info">
+                                                        <h2 class="card__active-title">Subaru LEVORG VN5</h2>
+                                                        <p class="card__passive-description">10 000 км • Полный • 5 000 км</p>
+                                                        <ul class="card__active-characteristics">
+                                                            <li class="card__active-meaning"><strong class="card__active-name">Пробег:</strong> 10 000 км</li>
+                                                            <li class="card__active-meaning"><strong class="card__active-name">Руль:</strong> Левый</li>
+                                                            <li class="card__active-meaning"><strong class="card__active-name">Двигатель:</strong> 3.0 л.</li>
+                                                            <li class="card__active-meaning"><strong class="card__active-name">Привод:</strong> Полный</li>
+                                                        </ul>
+                                                        <div class="card__active-footer">
+                                                            <span class="card__active-price">2 115 600 ₽</span>
+                                                            <button class="card__passive-outline">Подробнее</button>
+                                                            <div class="card__active-contact">
+                                                                <button class="card__active-button button">Заказать</button>
+                                                                <div class="header__contact-social">
+                                                                    <a href="/" class="header__social-link">
+                                                                        <img src="./images/watsapp-icon.svg" alt="Whatsapp" width="36" height="36">
+                                                                    </a>
+                                                                    <a href="/" class="header__social-link">
+                                                                        <img src="./images/telegram-icon.svg" alt="Telegram" width="36" height="36">
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </div>
-                                    <div class="card__passive">
-                                        <div class="card__passive-body">
-                                            <img class="card__passive-image" src="./images/photo-car-card.png" alt="Car" />
-                                            <h3 class="card__passive-title">Subaru LEVORG VN5</h3>
-                                            <p class="card__passive-description">10 000 км • Полный • 5 000 км</p>
-                                            <div class="card__passive-footer">
-                                                <span class="card__passive-price">2 115 600 ₽</span>
-                                                <button class="card__passive-outline">Подробнее</button>
-                                            </div>
-                                        </div>
-                                    </div>
+                                        </li>
+                                    </ul>
                                 </div>
-                                <div class="card">
-                                    <div class="card__active">
-                                        <img class="card__active-image" src="./images/photo-car-card.png" alt="Car" />
-                                        <div class="card__active-info">
-                                            <h2 class="card__active-title">Subaru LEVORG VN5</h2>
-                                            <ul class="card__active-characteristics">
-                                                <li class="card__active-meaning"><strong class="card__active-name">Пробег:</strong> 10 000 км</li>
-                                                <li class="card__active-meaning"><strong class="card__active-name">Руль:</strong> Левый</li>
-                                                <li class="card__active-meaning"><strong class="card__active-name">Двигатель:</strong> 3.0 л.</li>
-                                                <li class="card__active-meaning"><strong class="card__active-name">Привод:</strong> Полный</li>
-                                            </ul>
-                                            <div class="card__active-footer">
-                                                <span class="card__active-price">2 115 600 ₽</span>
-                                                <div class="card__active-contact">
-                                                    <button class="card__active-button button">Заказать</button>
-                                                    <div class="header__contact-social">
-                                                        <a href="/" class="header__social-link">
-                                                            <img src="./images/watsapp-icon.svg" alt="Whatsapp" width="36" height="36">
-                                                        </a>
-                                                        <a href="/" class="header__social-link">
-                                                            <img src="./images/telegram-icon.svg" alt="Telegram" width="36" height="36">
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="card__passive">
-                                        <div class="card__passive-body">
-                                            <img class="card__passive-image" src="./images/photo-car-card.png" alt="Car" />
-                                            <h3 class="card__passive-title">Subaru LEVORG VN5</h3>
-                                            <p class="card__passive-description">10 000 км • Полный • 5 000 км</p>
-                                            <div class="card__passive-footer">
-                                                <span class="card__passive-price">2 115 600 ₽</span>
-                                                <button class="card__passive-outline">Подробнее</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card">
-                                    <div class="card__active">
-                                        <img class="card__active-image" src="./images/photo-car-card.png" alt="Car" />
-                                        <div class="card__active-info">
-                                            <h2 class="card__active-title">Subaru LEVORG VN5</h2>
-                                            <ul class="card__active-characteristics">
-                                                <li class="card__active-meaning"><strong class="card__active-name">Пробег:</strong> 10 000 км</li>
-                                                <li class="card__active-meaning"><strong class="card__active-name">Руль:</strong> Левый</li>
-                                                <li class="card__active-meaning"><strong class="card__active-name">Двигатель:</strong> 3.0 л.</li>
-                                                <li class="card__active-meaning"><strong class="card__active-name">Привод:</strong> Полный</li>
-                                            </ul>
-                                            <div class="card__active-footer">
-                                                <span class="card__active-price">2 115 600 ₽</span>
-                                                <div class="card__active-contact">
-                                                    <button class="card__active-button button">Заказать</button>
-                                                    <div class="header__contact-social">
-                                                        <a href="/" class="header__social-link">
-                                                            <img src="./images/watsapp-icon.svg" alt="Whatsapp" width="36" height="36">
-                                                        </a>
-                                                        <a href="/" class="header__social-link">
-                                                            <img src="./images/telegram-icon.svg" alt="Telegram" width="36" height="36">
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="card__passive">
-                                        <div class="card__passive-body">
-                                            <img class="card__passive-image" src="./images/photo-car-card.png" alt="Car" />
-                                            <h3 class="card__passive-title">Subaru LEVORG VN5</h3>
-                                            <p class="card__passive-description">10 000 км • Полный • 5 000 км</p>
-                                            <div class="card__passive-footer">
-                                                <span class="card__passive-price">2 115 600 ₽</span>
-                                                <button class="card__passive-outline">Подробнее</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> 
+                            </section>
+                        </div>
                     </div>
                     <div id="china" class="popular-cars__china slider-section">
                         <div class="popular-cars__first-child">
@@ -408,242 +339,172 @@
                             </div>
                         </div>
                         <div class="popular-cars__last-child">
-                            <div class="slider-cars">
-                                <div class="card">
-                                    <div class="card__active">
-                                        <img class="card__active-image" src="./images/photo-car-card.png" alt="Car" />
-                                        <div class="card__active-info">
-                                            <h2 class="card__active-title">Subaru LEVORG VN5</h2>
-                                            <ul class="card__active-characteristics">
-                                                <li class="card__active-meaning"><strong class="card__active-name">Пробег:</strong> 10 000 км</li>
-                                                <li class="card__active-meaning"><strong class="card__active-name">Руль:</strong> Левый</li>
-                                                <li class="card__active-meaning"><strong class="card__active-name">Двигатель:</strong> 3.0 л.</li>
-                                                <li class="card__active-meaning"><strong class="card__active-name">Привод:</strong> Полный</li>
-                                            </ul>
-                                            <div class="card__active-footer">
-                                                <span class="card__active-price">2 115 600 ₽</span>
-                                                <div class="card__active-contact">
-                                                    <button class="card__active-button button">Заказать</button>
-                                                    <div class="header__contact-social">
-                                                        <a href="/" class="header__social-link">
-                                                            <img src="./images/watsapp-icon.svg" alt="Whatsapp" width="36" height="36">
-                                                        </a>
-                                                        <a href="/" class="header__social-link">
-                                                            <img src="./images/telegram-icon.svg" alt="Telegram" width="36" height="36">
-                                                        </a>
+                            <section id= "mySlider" class="splide" aria-label="Splide Basic HTML Example">
+                                <div class="splide__track">
+                                    <ul class="splide__list">
+                                        <li class="splide__slide">
+                                            <div class="card">
+                                                <div class="card__active">
+                                                    <img class="card__active-image" src="./images/photo-car-card.png" alt="Car" />
+                                                    <div class="card__active-info">
+                                                        <h2 class="card__active-title">Subaru LEVORG VN5</h2>
+                                                        <p class="card__passive-description">10 000 км • Полный • 5 000 км</p>
+                                                        <ul class="card__active-characteristics">
+                                                            <li class="card__active-meaning"><strong class="card__active-name">Пробег:</strong> 10 000 км</li>
+                                                            <li class="card__active-meaning"><strong class="card__active-name">Руль:</strong> Левый</li>
+                                                            <li class="card__active-meaning"><strong class="card__active-name">Двигатель:</strong> 3.0 л.</li>
+                                                            <li class="card__active-meaning"><strong class="card__active-name">Привод:</strong> Полный</li>
+                                                        </ul>
+                                                        <div class="card__active-footer">
+                                                            <span class="card__active-price">2 115 600 ₽</span>
+                                                            <button class="card__passive-outline">Подробнее</button>
+                                                            <div class="card__active-contact">
+                                                                <button class="card__active-button button">Заказать</button>
+                                                                <div class="header__contact-social">
+                                                                    <a href="/" class="header__social-link">
+                                                                        <img src="./images/watsapp-icon.svg" alt="Whatsapp" width="36" height="36">
+                                                                    </a>
+                                                                    <a href="/" class="header__social-link">
+                                                                        <img src="./images/telegram-icon.svg" alt="Telegram" width="36" height="36">
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>  
+                                        </li>
+                                        <li class="splide__slide">
+                                            <div class="card">
+                                                <div class="card__active">
+                                                    <img class="card__active-image" src="./images/photo-car-card.png" alt="Car" />
+                                                    <div class="card__active-info">
+                                                        <h2 class="card__active-title">Subaru LEVORG VN5</h2>
+                                                        <p class="card__passive-description">10 000 км • Полный • 5 000 км</p>
+                                                        <ul class="card__active-characteristics">
+                                                            <li class="card__active-meaning"><strong class="card__active-name">Пробег:</strong> 10 000 км</li>
+                                                            <li class="card__active-meaning"><strong class="card__active-name">Руль:</strong> Левый</li>
+                                                            <li class="card__active-meaning"><strong class="card__active-name">Двигатель:</strong> 3.0 л.</li>
+                                                            <li class="card__active-meaning"><strong class="card__active-name">Привод:</strong> Полный</li>
+                                                        </ul>
+                                                        <div class="card__active-footer">
+                                                            <span class="card__active-price">2 115 600 ₽</span>
+                                                            <button class="card__passive-outline">Подробнее</button>
+                                                            <div class="card__active-contact">
+                                                                <button class="card__active-button button">Заказать</button>
+                                                                <div class="header__contact-social">
+                                                                    <a href="/" class="header__social-link">
+                                                                        <img src="./images/watsapp-icon.svg" alt="Whatsapp" width="36" height="36">
+                                                                    </a>
+                                                                    <a href="/" class="header__social-link">
+                                                                        <img src="./images/telegram-icon.svg" alt="Telegram" width="36" height="36">
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </div>
-                                    <div class="card__passive">
-                                        <div class="card__passive-body">
-                                            <img class="card__passive-image" src="./images/photo-car-card.png" alt="Car" />
-                                            <h3 class="card__passive-title">Subaru LEVORG VN5</h3>
-                                            <p class="card__passive-description">10 000 км • Полный • 5 000 км</p>
-                                            <div class="card__passive-footer">
-                                                <span class="card__passive-price">2 115 600 ₽</span>
-                                                <button class="card__passive-outline">Подробнее</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card">
-                                    <div class="card__active">
-                                        <img class="card__active-image" src="./images/photo-car-card.png" alt="Car" />
-                                        <div class="card__active-info">
-                                            <h2 class="card__active-title">Subaru LEVORG VN5</h2>
-                                            <ul class="card__active-characteristics">
-                                                <li class="card__active-meaning"><strong class="card__active-name">Пробег:</strong> 10 000 км</li>
-                                                <li class="card__active-meaning"><strong class="card__active-name">Руль:</strong> Левый</li>
-                                                <li class="card__active-meaning"><strong class="card__active-name">Двигатель:</strong> 3.0 л.</li>
-                                                <li class="card__active-meaning"><strong class="card__active-name">Привод:</strong> Полный</li>
-                                            </ul>
-                                            <div class="card__active-footer">
-                                                <span class="card__active-price">2 115 600 ₽</span>
-                                                <div class="card__active-contact">
-                                                    <button class="card__active-button button">Заказать</button>
-                                                    <div class="header__contact-social">
-                                                        <a href="/" class="header__social-link">
-                                                            <img src="./images/watsapp-icon.svg" alt="Whatsapp" width="36" height="36">
-                                                        </a>
-                                                        <a href="/" class="header__social-link">
-                                                            <img src="./images/telegram-icon.svg" alt="Telegram" width="36" height="36">
-                                                        </a>
+                                        </li>
+                                        <li class="splide__slide">
+                                            <div class="card">
+                                                <div class="card__active">
+                                                    <img class="card__active-image" src="./images/photo-car-card.png" alt="Car" />
+                                                    <div class="card__active-info">
+                                                        <h2 class="card__active-title">Subaru LEVORG VN5</h2>
+                                                        <p class="card__passive-description">10 000 км • Полный • 5 000 км</p>
+                                                        <ul class="card__active-characteristics">
+                                                            <li class="card__active-meaning"><strong class="card__active-name">Пробег:</strong> 10 000 км</li>
+                                                            <li class="card__active-meaning"><strong class="card__active-name">Руль:</strong> Левый</li>
+                                                            <li class="card__active-meaning"><strong class="card__active-name">Двигатель:</strong> 3.0 л.</li>
+                                                            <li class="card__active-meaning"><strong class="card__active-name">Привод:</strong> Полный</li>
+                                                        </ul>
+                                                        <div class="card__active-footer">
+                                                            <span class="card__active-price">2 115 600 ₽</span>
+                                                            <button class="card__passive-outline">Подробнее</button>
+                                                            <div class="card__active-contact">
+                                                                <button class="card__active-button button">Заказать</button>
+                                                                <div class="header__contact-social">
+                                                                    <a href="/" class="header__social-link">
+                                                                        <img src="./images/watsapp-icon.svg" alt="Whatsapp" width="36" height="36">
+                                                                    </a>
+                                                                    <a href="/" class="header__social-link">
+                                                                        <img src="./images/telegram-icon.svg" alt="Telegram" width="36" height="36">
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </div>
-                                    <div class="card__passive">
-                                        <div class="card__passive-body">
-                                            <img class="card__passive-image" src="./images/photo-car-card.png" alt="Car" />
-                                            <h3 class="card__passive-title">Subaru LEVORG VN5</h3>
-                                            <p class="card__passive-description">10 000 км • Полный • 5 000 км</p>
-                                            <div class="card__passive-footer">
-                                                <span class="card__passive-price">2 115 600 ₽</span>
-                                                <button class="card__passive-outline">Подробнее</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card">
-                                    <div class="card__active">
-                                        <img class="card__active-image" src="./images/photo-car-card.png" alt="Car" />
-                                        <div class="card__active-info">
-                                            <h2 class="card__active-title">Subaru LEVORG VN5</h2>
-                                            <ul class="card__active-characteristics">
-                                                <li class="card__active-meaning"><strong class="card__active-name">Пробег:</strong> 10 000 км</li>
-                                                <li class="card__active-meaning"><strong class="card__active-name">Руль:</strong> Левый</li>
-                                                <li class="card__active-meaning"><strong class="card__active-name">Двигатель:</strong> 3.0 л.</li>
-                                                <li class="card__active-meaning"><strong class="card__active-name">Привод:</strong> Полный</li>
-                                            </ul>
-                                            <div class="card__active-footer">
-                                                <span class="card__active-price">2 115 600 ₽</span>
-                                                <div class="card__active-contact">
-                                                    <button class="card__active-button button">Заказать</button>
-                                                    <div class="header__contact-social">
-                                                        <a href="/" class="header__social-link">
-                                                            <img src="./images/watsapp-icon.svg" alt="Whatsapp" width="36" height="36">
-                                                        </a>
-                                                        <a href="/" class="header__social-link">
-                                                            <img src="./images/telegram-icon.svg" alt="Telegram" width="36" height="36">
-                                                        </a>
+                                        </li>
+                                        <li class="splide__slide">
+                                            <div class="card">
+                                                <div class="card__active">
+                                                    <img class="card__active-image" src="./images/photo-car-card.png" alt="Car" />
+                                                    <div class="card__active-info">
+                                                        <h2 class="card__active-title">Subaru LEVORG VN5</h2>
+                                                        <p class="card__passive-description">10 000 км • Полный • 5 000 км</p>
+                                                        <ul class="card__active-characteristics">
+                                                            <li class="card__active-meaning"><strong class="card__active-name">Пробег:</strong> 10 000 км</li>
+                                                            <li class="card__active-meaning"><strong class="card__active-name">Руль:</strong> Левый</li>
+                                                            <li class="card__active-meaning"><strong class="card__active-name">Двигатель:</strong> 3.0 л.</li>
+                                                            <li class="card__active-meaning"><strong class="card__active-name">Привод:</strong> Полный</li>
+                                                        </ul>
+                                                        <div class="card__active-footer">
+                                                            <span class="card__active-price">2 115 600 ₽</span>
+                                                            <button class="card__passive-outline">Подробнее</button>
+                                                            <div class="card__active-contact">
+                                                                <button class="card__active-button button">Заказать</button>
+                                                                <div class="header__contact-social">
+                                                                    <a href="/" class="header__social-link">
+                                                                        <img src="./images/watsapp-icon.svg" alt="Whatsapp" width="36" height="36">
+                                                                    </a>
+                                                                    <a href="/" class="header__social-link">
+                                                                        <img src="./images/telegram-icon.svg" alt="Telegram" width="36" height="36">
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </div>
-                                    <div class="card__passive">
-                                        <div class="card__passive-body">
-                                            <img class="card__passive-image" src="./images/photo-car-card.png" alt="Car" />
-                                            <h3 class="card__passive-title">Subaru LEVORG VN5</h3>
-                                            <p class="card__passive-description">10 000 км • Полный • 5 000 км</p>
-                                            <div class="card__passive-footer">
-                                                <span class="card__passive-price">2 115 600 ₽</span>
-                                                <button class="card__passive-outline">Подробнее</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card">
-                                    <div class="card__active">
-                                        <img class="card__active-image" src="./images/photo-car-card.png" alt="Car" />
-                                        <div class="card__active-info">
-                                            <h2 class="card__active-title">Subaru LEVORG VN5</h2>
-                                            <ul class="card__active-characteristics">
-                                                <li class="card__active-meaning"><strong class="card__active-name">Пробег:</strong> 10 000 км</li>
-                                                <li class="card__active-meaning"><strong class="card__active-name">Руль:</strong> Левый</li>
-                                                <li class="card__active-meaning"><strong class="card__active-name">Двигатель:</strong> 3.0 л.</li>
-                                                <li class="card__active-meaning"><strong class="card__active-name">Привод:</strong> Полный</li>
-                                            </ul>
-                                            <div class="card__active-footer">
-                                                <span class="card__active-price">2 115 600 ₽</span>
-                                                <div class="card__active-contact">
-                                                    <button class="card__active-button button">Заказать</button>
-                                                    <div class="header__contact-social">
-                                                        <a href="/" class="header__social-link">
-                                                            <img src="./images/watsapp-icon.svg" alt="Whatsapp" width="36" height="36">
-                                                        </a>
-                                                        <a href="/" class="header__social-link">
-                                                            <img src="./images/telegram-icon.svg" alt="Telegram" width="36" height="36">
-                                                        </a>
+                                        </li>
+                                        <li class="splide__slide">
+                                            <div class="card">
+                                                <div class="card__active">
+                                                    <img class="card__active-image" src="./images/photo-car-card.png" alt="Car" />
+                                                    <div class="card__active-info">
+                                                        <h2 class="card__active-title">Subaru LEVORG VN5</h2>
+                                                        <p class="card__passive-description">10 000 км • Полный • 5 000 км</p>
+                                                        <ul class="card__active-characteristics">
+                                                            <li class="card__active-meaning"><strong class="card__active-name">Пробег:</strong> 10 000 км</li>
+                                                            <li class="card__active-meaning"><strong class="card__active-name">Руль:</strong> Левый</li>
+                                                            <li class="card__active-meaning"><strong class="card__active-name">Двигатель:</strong> 3.0 л.</li>
+                                                            <li class="card__active-meaning"><strong class="card__active-name">Привод:</strong> Полный</li>
+                                                        </ul>
+                                                        <div class="card__active-footer">
+                                                            <span class="card__active-price">2 115 600 ₽</span>
+                                                            <button class="card__passive-outline">Подробнее</button>
+                                                            <div class="card__active-contact">
+                                                                <button class="card__active-button button">Заказать</button>
+                                                                <div class="header__contact-social">
+                                                                    <a href="/" class="header__social-link">
+                                                                        <img src="./images/watsapp-icon.svg" alt="Whatsapp" width="36" height="36">
+                                                                    </a>
+                                                                    <a href="/" class="header__social-link">
+                                                                        <img src="./images/telegram-icon.svg" alt="Telegram" width="36" height="36">
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </div>
-                                    <div class="card__passive">
-                                        <div class="card__passive-body">
-                                            <img class="card__passive-image" src="./images/photo-car-card.png" alt="Car" />
-                                            <h3 class="card__passive-title">Subaru LEVORG VN5</h3>
-                                            <p class="card__passive-description">10 000 км • Полный • 5 000 км</p>
-                                            <div class="card__passive-footer">
-                                                <span class="card__passive-price">2 115 600 ₽</span>
-                                                <button class="card__passive-outline">Подробнее</button>
-                                            </div>
-                                        </div>
-                                    </div>
+                                        </li>
+                                    </ul>
                                 </div>
-                                <div class="card">
-                                    <div class="card__active">
-                                        <img class="card__active-image" src="./images/photo-car-card.png" alt="Car" />
-                                        <div class="card__active-info">
-                                            <h2 class="card__active-title">Subaru LEVORG VN5</h2>
-                                            <ul class="card__active-characteristics">
-                                                <li class="card__active-meaning"><strong class="card__active-name">Пробег:</strong> 10 000 км</li>
-                                                <li class="card__active-meaning"><strong class="card__active-name">Руль:</strong> Левый</li>
-                                                <li class="card__active-meaning"><strong class="card__active-name">Двигатель:</strong> 3.0 л.</li>
-                                                <li class="card__active-meaning"><strong class="card__active-name">Привод:</strong> Полный</li>
-                                            </ul>
-                                            <div class="card__active-footer">
-                                                <span class="card__active-price">2 115 600 ₽</span>
-                                                <div class="card__active-contact">
-                                                    <button class="card__active-button button">Заказать</button>
-                                                    <div class="header__contact-social">
-                                                        <a href="/" class="header__social-link">
-                                                            <img src="./images/watsapp-icon.svg" alt="Whatsapp" width="36" height="36">
-                                                        </a>
-                                                        <a href="/" class="header__social-link">
-                                                            <img src="./images/telegram-icon.svg" alt="Telegram" width="36" height="36">
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="card__passive">
-                                        <div class="card__passive-body">
-                                            <img class="card__passive-image" src="./images/photo-car-card.png" alt="Car" />
-                                            <h3 class="card__passive-title">Subaru LEVORG VN5</h3>
-                                            <p class="card__passive-description">10 000 км • Полный • 5 000 км</p>
-                                            <div class="card__passive-footer">
-                                                <span class="card__passive-price">2 115 600 ₽</span>
-                                                <button class="card__passive-outline">Подробнее</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card">
-                                    <div class="card__active">
-                                        <img class="card__active-image" src="./images/photo-car-card.png" alt="Car" />
-                                        <div class="card__active-info">
-                                            <h2 class="card__active-title">Subaru LEVORG VN5</h2>
-                                            <ul class="card__active-characteristics">
-                                                <li class="card__active-meaning"><strong class="card__active-name">Пробег:</strong> 10 000 км</li>
-                                                <li class="card__active-meaning"><strong class="card__active-name">Руль:</strong> Левый</li>
-                                                <li class="card__active-meaning"><strong class="card__active-name">Двигатель:</strong> 3.0 л.</li>
-                                                <li class="card__active-meaning"><strong class="card__active-name">Привод:</strong> Полный</li>
-                                            </ul>
-                                            <div class="card__active-footer">
-                                                <span class="card__active-price">2 115 600 ₽</span>
-                                                <div class="card__active-contact">
-                                                    <button class="card__active-button button">Заказать</button>
-                                                    <div class="header__contact-social">
-                                                        <a href="/" class="header__social-link">
-                                                            <img src="./images/watsapp-icon.svg" alt="Whatsapp" width="36" height="36">
-                                                        </a>
-                                                        <a href="/" class="header__social-link">
-                                                            <img src="./images/telegram-icon.svg" alt="Telegram" width="36" height="36">
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="card__passive">
-                                        <div class="card__passive-body">
-                                            <img class="card__passive-image" src="./images/photo-car-card.png" alt="Car" />
-                                            <h3 class="card__passive-title">Subaru LEVORG VN5</h3>
-                                            <p class="card__passive-description">10 000 км • Полный • 5 000 км</p>
-                                            <div class="card__passive-footer">
-                                                <span class="card__passive-price">2 115 600 ₽</span>
-                                                <button class="card__passive-outline">Подробнее</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            </section>
                         </div> 
                     </div>
                     <div class="popular-cars__korea slider-section">
@@ -662,242 +523,172 @@
                             </div>
                         </div>
                         <div class="popular-cars__last-child">
-                            <div class="slider-cars">
-                                <div class="card">
-                                    <div class="card__active">
-                                        <img class="card__active-image" src="./images/photo-car-card.png" alt="Car" />
-                                        <div class="card__active-info">
-                                            <h2 class="card__active-title">Subaru LEVORG VN5</h2>
-                                            <ul class="card__active-characteristics">
-                                                <li class="card__active-meaning"><strong class="card__active-name">Пробег:</strong> 10 000 км</li>
-                                                <li class="card__active-meaning"><strong class="card__active-name">Руль:</strong> Левый</li>
-                                                <li class="card__active-meaning"><strong class="card__active-name">Двигатель:</strong> 3.0 л.</li>
-                                                <li class="card__active-meaning"><strong class="card__active-name">Привод:</strong> Полный</li>
-                                            </ul>
-                                            <div class="card__active-footer">
-                                                <span class="card__active-price">2 115 600 ₽</span>
-                                                <div class="card__active-contact">
-                                                    <button class="card__active-button button">Заказать</button>
-                                                    <div class="header__contact-social">
-                                                        <a href="/" class="header__social-link">
-                                                            <img src="./images/watsapp-icon.svg" alt="Whatsapp" width="36" height="36">
-                                                        </a>
-                                                        <a href="/" class="header__social-link">
-                                                            <img src="./images/telegram-icon.svg" alt="Telegram" width="36" height="36">
-                                                        </a>
+                            <section id= "mySlider" class="splide" aria-label="Splide Basic HTML Example">
+                                <div class="splide__track">
+                                    <ul class="splide__list">
+                                        <li class="splide__slide">
+                                            <div class="card">
+                                                <div class="card__active">
+                                                    <img class="card__active-image" src="./images/photo-car-card.png" alt="Car" />
+                                                    <div class="card__active-info">
+                                                        <h2 class="card__active-title">Subaru LEVORG VN5</h2>
+                                                        <p class="card__passive-description">10 000 км • Полный • 5 000 км</p>
+                                                        <ul class="card__active-characteristics">
+                                                            <li class="card__active-meaning"><strong class="card__active-name">Пробег:</strong> 10 000 км</li>
+                                                            <li class="card__active-meaning"><strong class="card__active-name">Руль:</strong> Левый</li>
+                                                            <li class="card__active-meaning"><strong class="card__active-name">Двигатель:</strong> 3.0 л.</li>
+                                                            <li class="card__active-meaning"><strong class="card__active-name">Привод:</strong> Полный</li>
+                                                        </ul>
+                                                        <div class="card__active-footer">
+                                                            <span class="card__active-price">2 115 600 ₽</span>
+                                                            <button class="card__passive-outline">Подробнее</button>
+                                                            <div class="card__active-contact">
+                                                                <button class="card__active-button button">Заказать</button>
+                                                                <div class="header__contact-social">
+                                                                    <a href="/" class="header__social-link">
+                                                                        <img src="./images/watsapp-icon.svg" alt="Whatsapp" width="36" height="36">
+                                                                    </a>
+                                                                    <a href="/" class="header__social-link">
+                                                                        <img src="./images/telegram-icon.svg" alt="Telegram" width="36" height="36">
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>  
+                                        </li>
+                                        <li class="splide__slide">
+                                            <div class="card">
+                                                <div class="card__active">
+                                                    <img class="card__active-image" src="./images/photo-car-card.png" alt="Car" />
+                                                    <div class="card__active-info">
+                                                        <h2 class="card__active-title">Subaru LEVORG VN5</h2>
+                                                        <p class="card__passive-description">10 000 км • Полный • 5 000 км</p>
+                                                        <ul class="card__active-characteristics">
+                                                            <li class="card__active-meaning"><strong class="card__active-name">Пробег:</strong> 10 000 км</li>
+                                                            <li class="card__active-meaning"><strong class="card__active-name">Руль:</strong> Левый</li>
+                                                            <li class="card__active-meaning"><strong class="card__active-name">Двигатель:</strong> 3.0 л.</li>
+                                                            <li class="card__active-meaning"><strong class="card__active-name">Привод:</strong> Полный</li>
+                                                        </ul>
+                                                        <div class="card__active-footer">
+                                                            <span class="card__active-price">2 115 600 ₽</span>
+                                                            <button class="card__passive-outline">Подробнее</button>
+                                                            <div class="card__active-contact">
+                                                                <button class="card__active-button button">Заказать</button>
+                                                                <div class="header__contact-social">
+                                                                    <a href="/" class="header__social-link">
+                                                                        <img src="./images/watsapp-icon.svg" alt="Whatsapp" width="36" height="36">
+                                                                    </a>
+                                                                    <a href="/" class="header__social-link">
+                                                                        <img src="./images/telegram-icon.svg" alt="Telegram" width="36" height="36">
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </div>
-                                    <div class="card__passive">
-                                        <div class="card__passive-body">
-                                            <img class="card__passive-image" src="./images/photo-car-card.png" alt="Car" />
-                                            <h3 class="card__passive-title">Subaru LEVORG VN5</h3>
-                                            <p class="card__passive-description">10 000 км • Полный • 5 000 км</p>
-                                            <div class="card__passive-footer">
-                                                <span class="card__passive-price">2 115 600 ₽</span>
-                                                <button class="card__passive-outline">Подробнее</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card">
-                                    <div class="card__active">
-                                        <img class="card__active-image" src="./images/photo-car-card.png" alt="Car" />
-                                        <div class="card__active-info">
-                                            <h2 class="card__active-title">Subaru LEVORG VN5</h2>
-                                            <ul class="card__active-characteristics">
-                                                <li class="card__active-meaning"><strong class="card__active-name">Пробег:</strong> 10 000 км</li>
-                                                <li class="card__active-meaning"><strong class="card__active-name">Руль:</strong> Левый</li>
-                                                <li class="card__active-meaning"><strong class="card__active-name">Двигатель:</strong> 3.0 л.</li>
-                                                <li class="card__active-meaning"><strong class="card__active-name">Привод:</strong> Полный</li>
-                                            </ul>
-                                            <div class="card__active-footer">
-                                                <span class="card__active-price">2 115 600 ₽</span>
-                                                <div class="card__active-contact">
-                                                    <button class="card__active-button button">Заказать</button>
-                                                    <div class="header__contact-social">
-                                                        <a href="/" class="header__social-link">
-                                                            <img src="./images/watsapp-icon.svg" alt="Whatsapp" width="36" height="36">
-                                                        </a>
-                                                        <a href="/" class="header__social-link">
-                                                            <img src="./images/telegram-icon.svg" alt="Telegram" width="36" height="36">
-                                                        </a>
+                                        </li>
+                                        <li class="splide__slide">
+                                            <div class="card">
+                                                <div class="card__active">
+                                                    <img class="card__active-image" src="./images/photo-car-card.png" alt="Car" />
+                                                    <div class="card__active-info">
+                                                        <h2 class="card__active-title">Subaru LEVORG VN5</h2>
+                                                        <p class="card__passive-description">10 000 км • Полный • 5 000 км</p>
+                                                        <ul class="card__active-characteristics">
+                                                            <li class="card__active-meaning"><strong class="card__active-name">Пробег:</strong> 10 000 км</li>
+                                                            <li class="card__active-meaning"><strong class="card__active-name">Руль:</strong> Левый</li>
+                                                            <li class="card__active-meaning"><strong class="card__active-name">Двигатель:</strong> 3.0 л.</li>
+                                                            <li class="card__active-meaning"><strong class="card__active-name">Привод:</strong> Полный</li>
+                                                        </ul>
+                                                        <div class="card__active-footer">
+                                                            <span class="card__active-price">2 115 600 ₽</span>
+                                                            <button class="card__passive-outline">Подробнее</button>
+                                                            <div class="card__active-contact">
+                                                                <button class="card__active-button button">Заказать</button>
+                                                                <div class="header__contact-social">
+                                                                    <a href="/" class="header__social-link">
+                                                                        <img src="./images/watsapp-icon.svg" alt="Whatsapp" width="36" height="36">
+                                                                    </a>
+                                                                    <a href="/" class="header__social-link">
+                                                                        <img src="./images/telegram-icon.svg" alt="Telegram" width="36" height="36">
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </div>
-                                    <div class="card__passive">
-                                        <div class="card__passive-body">
-                                            <img class="card__passive-image" src="./images/photo-car-card.png" alt="Car" />
-                                            <h3 class="card__passive-title">Subaru LEVORG VN5</h3>
-                                            <p class="card__passive-description">10 000 км • Полный • 5 000 км</p>
-                                            <div class="card__passive-footer">
-                                                <span class="card__passive-price">2 115 600 ₽</span>
-                                                <button class="card__passive-outline">Подробнее</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card">
-                                    <div class="card__active">
-                                        <img class="card__active-image" src="./images/photo-car-card.png" alt="Car" />
-                                        <div class="card__active-info">
-                                            <h2 class="card__active-title">Subaru LEVORG VN5</h2>
-                                            <ul class="card__active-characteristics">
-                                                <li class="card__active-meaning"><strong class="card__active-name">Пробег:</strong> 10 000 км</li>
-                                                <li class="card__active-meaning"><strong class="card__active-name">Руль:</strong> Левый</li>
-                                                <li class="card__active-meaning"><strong class="card__active-name">Двигатель:</strong> 3.0 л.</li>
-                                                <li class="card__active-meaning"><strong class="card__active-name">Привод:</strong> Полный</li>
-                                            </ul>
-                                            <div class="card__active-footer">
-                                                <span class="card__active-price">2 115 600 ₽</span>
-                                                <div class="card__active-contact">
-                                                    <button class="card__active-button button">Заказать</button>
-                                                    <div class="header__contact-social">
-                                                        <a href="/" class="header__social-link">
-                                                            <img src="./images/watsapp-icon.svg" alt="Whatsapp" width="36" height="36">
-                                                        </a>
-                                                        <a href="/" class="header__social-link">
-                                                            <img src="./images/telegram-icon.svg" alt="Telegram" width="36" height="36">
-                                                        </a>
+                                        </li>
+                                        <li class="splide__slide">
+                                            <div class="card">
+                                                <div class="card__active">
+                                                    <img class="card__active-image" src="./images/photo-car-card.png" alt="Car" />
+                                                    <div class="card__active-info">
+                                                        <h2 class="card__active-title">Subaru LEVORG VN5</h2>
+                                                        <p class="card__passive-description">10 000 км • Полный • 5 000 км</p>
+                                                        <ul class="card__active-characteristics">
+                                                            <li class="card__active-meaning"><strong class="card__active-name">Пробег:</strong> 10 000 км</li>
+                                                            <li class="card__active-meaning"><strong class="card__active-name">Руль:</strong> Левый</li>
+                                                            <li class="card__active-meaning"><strong class="card__active-name">Двигатель:</strong> 3.0 л.</li>
+                                                            <li class="card__active-meaning"><strong class="card__active-name">Привод:</strong> Полный</li>
+                                                        </ul>
+                                                        <div class="card__active-footer">
+                                                            <span class="card__active-price">2 115 600 ₽</span>
+                                                            <button class="card__passive-outline">Подробнее</button>
+                                                            <div class="card__active-contact">
+                                                                <button class="card__active-button button">Заказать</button>
+                                                                <div class="header__contact-social">
+                                                                    <a href="/" class="header__social-link">
+                                                                        <img src="./images/watsapp-icon.svg" alt="Whatsapp" width="36" height="36">
+                                                                    </a>
+                                                                    <a href="/" class="header__social-link">
+                                                                        <img src="./images/telegram-icon.svg" alt="Telegram" width="36" height="36">
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </div>
-                                    <div class="card__passive">
-                                        <div class="card__passive-body">
-                                            <img class="card__passive-image" src="./images/photo-car-card.png" alt="Car" />
-                                            <h3 class="card__passive-title">Subaru LEVORG VN5</h3>
-                                            <p class="card__passive-description">10 000 км • Полный • 5 000 км</p>
-                                            <div class="card__passive-footer">
-                                                <span class="card__passive-price">2 115 600 ₽</span>
-                                                <button class="card__passive-outline">Подробнее</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card">
-                                    <div class="card__active">
-                                        <img class="card__active-image" src="./images/photo-car-card.png" alt="Car" />
-                                        <div class="card__active-info">
-                                            <h2 class="card__active-title">Subaru LEVORG VN5</h2>
-                                            <ul class="card__active-characteristics">
-                                                <li class="card__active-meaning"><strong class="card__active-name">Пробег:</strong> 10 000 км</li>
-                                                <li class="card__active-meaning"><strong class="card__active-name">Руль:</strong> Левый</li>
-                                                <li class="card__active-meaning"><strong class="card__active-name">Двигатель:</strong> 3.0 л.</li>
-                                                <li class="card__active-meaning"><strong class="card__active-name">Привод:</strong> Полный</li>
-                                            </ul>
-                                            <div class="card__active-footer">
-                                                <span class="card__active-price">2 115 600 ₽</span>
-                                                <div class="card__active-contact">
-                                                    <button class="card__active-button button">Заказать</button>
-                                                    <div class="header__contact-social">
-                                                        <a href="/" class="header__social-link">
-                                                            <img src="./images/watsapp-icon.svg" alt="Whatsapp" width="36" height="36">
-                                                        </a>
-                                                        <a href="/" class="header__social-link">
-                                                            <img src="./images/telegram-icon.svg" alt="Telegram" width="36" height="36">
-                                                        </a>
+                                        </li>
+                                        <li class="splide__slide">
+                                            <div class="card">
+                                                <div class="card__active">
+                                                    <img class="card__active-image" src="./images/photo-car-card.png" alt="Car" />
+                                                    <div class="card__active-info">
+                                                        <h2 class="card__active-title">Subaru LEVORG VN5</h2>
+                                                        <p class="card__passive-description">10 000 км • Полный • 5 000 км</p>
+                                                        <ul class="card__active-characteristics">
+                                                            <li class="card__active-meaning"><strong class="card__active-name">Пробег:</strong> 10 000 км</li>
+                                                            <li class="card__active-meaning"><strong class="card__active-name">Руль:</strong> Левый</li>
+                                                            <li class="card__active-meaning"><strong class="card__active-name">Двигатель:</strong> 3.0 л.</li>
+                                                            <li class="card__active-meaning"><strong class="card__active-name">Привод:</strong> Полный</li>
+                                                        </ul>
+                                                        <div class="card__active-footer">
+                                                            <span class="card__active-price">2 115 600 ₽</span>
+                                                            <button class="card__passive-outline">Подробнее</button>
+                                                            <div class="card__active-contact">
+                                                                <button class="card__active-button button">Заказать</button>
+                                                                <div class="header__contact-social">
+                                                                    <a href="/" class="header__social-link">
+                                                                        <img src="./images/watsapp-icon.svg" alt="Whatsapp" width="36" height="36">
+                                                                    </a>
+                                                                    <a href="/" class="header__social-link">
+                                                                        <img src="./images/telegram-icon.svg" alt="Telegram" width="36" height="36">
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </div>
-                                    <div class="card__passive">
-                                        <div class="card__passive-body">
-                                            <img class="card__passive-image" src="./images/photo-car-card.png" alt="Car" />
-                                            <h3 class="card__passive-title">Subaru LEVORG VN5</h3>
-                                            <p class="card__passive-description">10 000 км • Полный • 5 000 км</p>
-                                            <div class="card__passive-footer">
-                                                <span class="card__passive-price">2 115 600 ₽</span>
-                                                <button class="card__passive-outline">Подробнее</button>
-                                            </div>
-                                        </div>
-                                    </div>
+                                        </li>
+                                    </ul>
                                 </div>
-                                <div class="card">
-                                    <div class="card__active">
-                                        <img class="card__active-image" src="./images/photo-car-card.png" alt="Car" />
-                                        <div class="card__active-info">
-                                            <h2 class="card__active-title">Subaru LEVORG VN5</h2>
-                                            <ul class="card__active-characteristics">
-                                                <li class="card__active-meaning"><strong class="card__active-name">Пробег:</strong> 10 000 км</li>
-                                                <li class="card__active-meaning"><strong class="card__active-name">Руль:</strong> Левый</li>
-                                                <li class="card__active-meaning"><strong class="card__active-name">Двигатель:</strong> 3.0 л.</li>
-                                                <li class="card__active-meaning"><strong class="card__active-name">Привод:</strong> Полный</li>
-                                            </ul>
-                                            <div class="card__active-footer">
-                                                <span class="card__active-price">2 115 600 ₽</span>
-                                                <div class="card__active-contact">
-                                                    <button class="card__active-button button">Заказать</button>
-                                                    <div class="header__contact-social">
-                                                        <a href="/" class="header__social-link">
-                                                            <img src="./images/watsapp-icon.svg" alt="Whatsapp" width="36" height="36">
-                                                        </a>
-                                                        <a href="/" class="header__social-link">
-                                                            <img src="./images/telegram-icon.svg" alt="Telegram" width="36" height="36">
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="card__passive">
-                                        <div class="card__passive-body">
-                                            <img class="card__passive-image" src="./images/photo-car-card.png" alt="Car" />
-                                            <h3 class="card__passive-title">Subaru LEVORG VN5</h3>
-                                            <p class="card__passive-description">10 000 км • Полный • 5 000 км</p>
-                                            <div class="card__passive-footer">
-                                                <span class="card__passive-price">2 115 600 ₽</span>
-                                                <button class="card__passive-outline">Подробнее</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card">
-                                    <div class="card__active">
-                                        <img class="card__active-image" src="./images/photo-car-card.png" alt="Car" />
-                                        <div class="card__active-info">
-                                            <h2 class="card__active-title">Subaru LEVORG VN5</h2>
-                                            <ul class="card__active-characteristics">
-                                                <li class="card__active-meaning"><strong class="card__active-name">Пробег:</strong> 10 000 км</li>
-                                                <li class="card__active-meaning"><strong class="card__active-name">Руль:</strong> Левый</li>
-                                                <li class="card__active-meaning"><strong class="card__active-name">Двигатель:</strong> 3.0 л.</li>
-                                                <li class="card__active-meaning"><strong class="card__active-name">Привод:</strong> Полный</li>
-                                            </ul>
-                                            <div class="card__active-footer">
-                                                <span class="card__active-price">2 115 600 ₽</span>
-                                                <div class="card__active-contact">
-                                                    <button class="card__active-button button">Заказать</button>
-                                                    <div class="header__contact-social">
-                                                        <a href="/" class="header__social-link">
-                                                            <img src="./images/watsapp-icon.svg" alt="Whatsapp" width="36" height="36">
-                                                        </a>
-                                                        <a href="/" class="header__social-link">
-                                                            <img src="./images/telegram-icon.svg" alt="Telegram" width="36" height="36">
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="card__passive">
-                                        <div class="card__passive-body">
-                                            <img class="card__passive-image" src="./images/photo-car-card.png" alt="Car" />
-                                            <h3 class="card__passive-title">Subaru LEVORG VN5</h3>
-                                            <p class="card__passive-description">10 000 км • Полный • 5 000 км</p>
-                                            <div class="card__passive-footer">
-                                                <span class="card__passive-price">2 115 600 ₽</span>
-                                                <button class="card__passive-outline">Подробнее</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            </section>
                         </div> 
                     </div>
                 </div>
@@ -1378,7 +1169,7 @@
                             </div>
                         </div>
                         <div class="schema__image">
-                            <img src="./images/hyundai-motor-back.svg" alt="" class="stages__image-car">
+                            <img src="./" alt="" class="stages__image-car">
                         </div>
                     </div>
                     </div>
@@ -1593,5 +1384,7 @@
     <script src="./js/custom-select.js"></script>
     <script src="./js/contactForm.js"></script>
     <script src="./js/headerScroll.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 </html>

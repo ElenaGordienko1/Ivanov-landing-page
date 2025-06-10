@@ -19,7 +19,7 @@
         padding: 0px;
         gap: 52px;
         height: 444px;
-        left: 96px;
+        left: 0px;
     }
 
     &__text{
@@ -179,22 +179,26 @@
     &__image{
         margin-left: auto;
         position: relative;
+        right: 500px;
 
         &-car{
             position: absolute;
             transform: scale(-1, 1);
-            top: 17px;
-            right: 224px;
+            top: -400px;
+            right: 800px;
+            width: 2000px;
+            left:0px;
+            bottom: 0px;
         }
 
         &-block{
             position: relative;
             width: 596px;
-            height: 444px;
             top: 0px;
             background: var(--color-grey-addition);
             border-radius: 20px 0px 0px 20px;
-            right: 224px;
+            right: -60px;
+            left:550px;
 
         }
     }

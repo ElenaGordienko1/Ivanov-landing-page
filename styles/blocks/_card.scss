@@ -1,8 +1,8 @@
 .card {
+  transition: transform 0.4s ease;
   width: auto;
-  scroll-snap-align: start;
   flex-shrink: 0;
-  transition: transform 0.5s ease-in-out;
+  scroll-snap-align: start;
 
   &__active {
     display: flex;
@@ -18,7 +18,7 @@
     &-image {
       width: 427px;
       height: 377px;
-      border-radius: 14px; 
+      border-radius: var(--border-radius-medium); 
     }
 
     &-info {
@@ -31,14 +31,14 @@
     }
 
     &-title {
-      width: 293px;
-      height: 46px;
       font-family: var(--font-family-large-text);
       font-weight: 700;
       font-size: 24px;
       line-height: 30px;
       color: var(--color-dark);
       padding-bottom: 16px;
+      width: 293px;
+      height: 46px;
     }
 
     &-characteristics {
@@ -52,7 +52,6 @@
     }
 
     &-name {
-      height: 20px;
       font-family: var(--font-family-small-text);
       font-weight: 500;
       font-size: 16px;
@@ -69,18 +68,17 @@
       font-weight: 600;
       font-size: 16px;
       line-height: 20px;
-      text-align: right;
       color: var(--color-dark);
     }
 
     &-price {
-      width: 154px;
-      height: 35px;
       font-family: var(--font-family-large-text);
       font-weight: 700;
       font-size: 28px;
       line-height: 35px;
       color: var(--color-dark);
+      width: 154px;
+      height: 35px;
     }
 
     &-contact {
@@ -94,7 +92,7 @@
     }
 
     &-button {
-      padding: 14px 40px;
+      padding: 14px 40px; 
       width: 197px;
       height: 48px;
       border-radius: var(--border-radius-small);
@@ -121,31 +119,22 @@
     }
 
     &-title {
-      width: 272px;
-      height: 25px;
       font-family: var(--font-family-small-text);
       font-weight: 600;
       font-size: 20px;
       line-height: 25px;
       color: var(--color-dark);
       padding-left: 20px;
+      width: 272px;
+      height: 25px;
     }
 
     &-description {
-      height: 18px;
-      font-family: var(--font-family-small-text);
-      font-weight: 500;
-      font-size: 14px;
-      line-height: 18px;
-      text-align: right;
-      color: var(--color-grey-description);
-      padding-left: 20px;
-      padding-bottom: 20px;
+      display: none;
     }
 
     &-footer {
       display: flex;
-      flex-direction: row;
       justify-content: space-between;
       align-items: center;
       padding-left: 20px;
@@ -155,8 +144,6 @@
     }
 
     &-price {
-      margin: 0 auto;
-      height: 25px;
       font-family: var(--font-family-large-text);
       font-weight: 700;
       font-size: 20px;
@@ -165,34 +152,7 @@
     }
 
     &-outline {
-      background: transparent;
-      border: 1.5px solid var(--color-accent-alt);
-      color: var(--color-accent-alt);
-      width: 122px;
-      height: 40px;
-      border-radius: var(--border-radius-small);
-      font-family: var(--font-family-small-text);
-      font-weight: 500;
-      font-size: 14px;
-      line-height: 18px;
+      display: none;
     }
   }
-}
-
-.card__active {
-  width: 760px;
-  display: none;
-}
-
-.card__passive {
-  width: 312px;
-  display: block;
-}
-
-.card.card--active .card__active {
-  display: flex;
-}
-
-.card.card--active .card__passive {
-  display: none;
 }
