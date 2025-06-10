@@ -27,6 +27,11 @@
             display: inline-flex;
             align-items: center;
             height: 48px;
+            cursor: pointer;
+
+            @include hover{
+                color: var(--color-accent);
+            }
         }
     }
 
