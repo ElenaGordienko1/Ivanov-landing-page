@@ -433,6 +433,7 @@ a {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
   gap: 16px;
   margin-top: 16px;
   width: 293px;
@@ -850,8 +851,11 @@ a {
   gap: 80px;
 }
 .schema__image-car {
-  bottom: 200px;
-  transform: scale(-1);
+  position: absolute;
+  width: 1377px;
+  height: 547px;
+  bottom: 0px;
+  right: -705px;
 }
 
 .footer {
@@ -1013,7 +1017,6 @@ a {
   flex-direction: row !important;
   align-items: flex-start !important;
   gap: 20px !important;
-  isolation: isolate;
   width: 760px;
   height: 377px;
   background: var(--color-light) !important;
@@ -1641,25 +1644,26 @@ a {
 .hero__image {
   margin-left: auto;
   position: relative;
-  right: 500px;
 }
 .hero__image-car {
   position: absolute;
-  transform: scale(-1, 1);
-  top: -400px;
-  right: 800px;
-  width: 2000px;
-  left: 0px;
+  right: 0px;
+  z-index: 10px;
+  top: 20px;
+  left: -140px;
   bottom: 0px;
+  right: 0px;
 }
 .hero__image-block {
   position: relative;
-  width: 596px;
+  width: 5000px;
+  height: 444px;
   top: 0px;
   background: var(--color-grey-addition);
   border-radius: 20px 0px 0px 20px;
-  right: -60px;
-  left: 550px;
+  right: 0px;
+  z-index: 4px;
+  bottom: 0px;
 }
 
 .scroll-slider {

@@ -314,8 +314,12 @@
   }
 
   &__image-car{
-    bottom: 200px;
-    transform: scale(-1);
+      position: absolute;
+      width: 1377px;
+      height: 547px;
+      bottom: 0px;
+      right: -705px;
+
     }
 
 }

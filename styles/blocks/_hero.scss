@@ -179,26 +179,28 @@
     &__image{
         margin-left: auto;
         position: relative;
-        right: 500px;
 
         &-car{
             position: absolute;
-            transform: scale(-1, 1);
-            top: -400px;
-            right: 800px;
-            width: 2000px;
-            left:0px;
+            right: 0px;
+            z-index: 10px;
+            top:20px;
+            left:-140px;
             bottom: 0px;
+            right: 0px;
+            
         }
 
         &-block{
             position: relative;
-            width: 596px;
+            width: 5000px;
+            height: 444px;
             top: 0px;
             background: var(--color-grey-addition);
             border-radius: 20px 0px 0px 20px;
-            right: -60px;
-            left:550px;
+            right: 0px;
+            z-index: 4px;
+            bottom: 0px;
 
         }
     }
