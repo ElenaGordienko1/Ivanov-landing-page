@@ -48,14 +48,22 @@
       color: var(--color-grey-description);
       white-space: nowrap;
     }
+
+    &-text{
+      @include hover {
+        color: var(--color-accent);
+      }
+    }
   }
+
 
   &__button {
     width: 196px;
     height: 48px;
+  }
 
-    @include hover {
-      background-color: var(--color-light);
-    }
+  &__icon{
+    width: 36px !important;
+    height: 36px !important;
   }
 }

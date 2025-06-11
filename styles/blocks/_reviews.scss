@@ -63,19 +63,19 @@
     flex-direction: row;
     align-items: center;
     gap: 4px;
-    width: 63px;
     height: 14px;
+    font-family: var(--font-family-small-text);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 100%;
+    color: var(--color-grey-description);
+    color: #A3A3AA;
 
-    &-name {
-      width: 47px;
-      height: 14px;
-      font-family: var(--font-family-small-text);
-      font-style: normal;
-      font-weight: 600;
-      font-size: 14px;
-      line-height: 100%;
-      color: var(--color-grey-description);
+    @include hover{
+      color: var(--color-accent);
     }
+    
   }
 
   &__rating {
@@ -207,6 +207,10 @@
       line-height: 20px;
       text-align: right;
       color: var(--color-accent-alt);
+
+      @include hover{
+        color: var(--color-accent);
+      }
     }
   }
 

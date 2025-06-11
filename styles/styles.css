@@ -188,6 +188,7 @@ svg * {
   --color-dark: #252533;
   --color-light: #F7F7FA;
   --color-accent: #3E3EF0;
+  --color-accent-hover: #2828E0;
   --color-grey-addition: #EAEAF4;
   --color-dark-description: #4F4F5B;
   --color-grey-description: #A3A3AA;
@@ -295,14 +296,12 @@ a {
 }
 @media (hover: hover) {
   .button:hover {
-    background-color: var(--color-grey-addition);
-    color: var(--color-dark);
+    background-color: var(--color-accent-hover);
   }
 }
 @media (hover: none) {
   .button:active {
-    background-color: var(--color-grey-addition);
-    color: var(--color-dark);
+    background-color: var(--color-accent-hover);
   }
 }
 .button--transparent {
@@ -340,6 +339,18 @@ a {
 }
 .arrow__left {
   transform: scale(-1, 1);
+}
+@media (hover: hover) {
+  .arrow__left:hover {
+    background-color: var(--color-accent-alt);
+    color: var(--color-light);
+  }
+}
+@media (hover: none) {
+  .arrow__left:active {
+    background-color: var(--color-accent-alt);
+    color: var(--color-light);
+  }
 }
 
 .card {
@@ -838,6 +849,10 @@ a {
   flex-direction: row;
   gap: 80px;
 }
+.schema__image-car {
+  bottom: 200px;
+  transform: scale(-1);
+}
 
 .footer {
   background-color: var(--color-grey-addition-alt);
@@ -884,19 +899,23 @@ a {
   color: var(--color-grey-description);
   white-space: nowrap;
 }
+@media (hover: hover) {
+  .footer__info-text:hover {
+    color: var(--color-accent);
+  }
+}
+@media (hover: none) {
+  .footer__info-text:active {
+    color: var(--color-accent);
+  }
+}
 .footer__button {
   width: 196px;
   height: 48px;
 }
-@media (hover: hover) {
-  .footer__button:hover {
-    background-color: var(--color-light);
-  }
-}
-@media (hover: none) {
-  .footer__button:active {
-    background-color: var(--color-light);
-  }
+.footer__icon {
+  width: 36px !important;
+  height: 36px !important;
 }
 
 .custom-select {
@@ -1094,6 +1113,18 @@ a {
   font-weight: 500;
   font-size: 14px;
   line-height: 18px;
+}
+@media (hover: hover) {
+  .splide__slide:not(.is-active) .card__passive-outline:hover {
+    background-color: var(--color-accent-alt);
+    color: var(--color-light);
+  }
+}
+@media (hover: none) {
+  .splide__slide:not(.is-active) .card__passive-outline:active {
+    background-color: var(--color-accent-alt);
+    color: var(--color-light);
+  }
 }
 
 .contacts__inner {
@@ -1650,6 +1681,123 @@ a {
   scroll-snap-align: start;
 }
 
+.modal-final {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+.modal-final.active {
+  display: flex;
+}
+.modal-final__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 52px;
+  gap: 12px;
+  isolation: isolate;
+  position: absolute;
+  width: 839px;
+  height: 356px;
+  left: calc(50% - 419.5px + 0.5px);
+  top: calc(50% - 178px);
+  background: #EAEAF4;
+  border-radius: 32px;
+}
+.modal-final__icon {
+  position: absolute;
+  width: 429.69px;
+  height: 429.69px;
+  left: 475px;
+  top: 60px;
+  transform: rotate(-12.25deg);
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  z-index: 0;
+}
+.modal-final__button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 342px;
+  height: 64px;
+  background: #3E3EF0;
+  border-radius: 16px;
+}
+.modal-final__title {
+  width: 489px;
+  height: 48px;
+  font-family: "Wix Madefor Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 120%;
+  text-transform: uppercase;
+  color: #252533;
+}
+.modal-final__text {
+  width: 448px;
+  height: 96px;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 120%;
+  color: #4F4F5B;
+  margin-bottom: 20px;
+}
+.modal-final__close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--color-grey-close);
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+}
+.modal.is-active {
+  display: flex;
+}
+.modal__overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+.modal__content {
+  position: relative;
+  z-index: 1;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  max-width: 600px;
+  width: 90%;
+}
+.modal__close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
 .reviews {
   position: relative;
 }
@@ -1709,11 +1857,6 @@ a {
   flex-direction: row;
   align-items: center;
   gap: 4px;
-  width: 63px;
-  height: 14px;
-}
-.reviews__link-name {
-  width: 47px;
   height: 14px;
   font-family: var(--font-family-small-text);
   font-style: normal;
@@ -1721,6 +1864,17 @@ a {
   font-size: 14px;
   line-height: 100%;
   color: var(--color-grey-description);
+  color: #A3A3AA;
+}
+@media (hover: hover) {
+  .reviews__link:hover {
+    color: var(--color-accent);
+  }
+}
+@media (hover: none) {
+  .reviews__link:active {
+    color: var(--color-accent);
+  }
 }
 .reviews__rating {
   display: flex;
@@ -1835,6 +1989,16 @@ a {
   line-height: 20px;
   text-align: right;
   color: var(--color-accent-alt);
+}
+@media (hover: hover) {
+  .reviews__text-link:hover {
+    color: var(--color-accent);
+  }
+}
+@media (hover: none) {
+  .reviews__text-link:active {
+    color: var(--color-accent);
+  }
 }
 .reviews__rating-title {
   display: flex;
@@ -2027,6 +2191,41 @@ a {
   width: 648px;
   height: 481px;
 }
+.about-us__icon {
+  width: 44px !important;
+  height: 44px !important;
+}
+
+.icon__wp {
+  width: 32px;
+  height: 32px;
+  color: #2CB742;
+}
+@media (hover: hover) {
+  .icon__wp:hover {
+    color: #1AA330;
+  }
+}
+@media (hover: none) {
+  .icon__wp:active {
+    color: #1AA330;
+  }
+}
+.icon__tg {
+  width: 32px;
+  height: 32px;
+  color: #2AABEE;
+}
+@media (hover: hover) {
+  .icon__tg:hover {
+    color: #1696D9;
+  }
+}
+@media (hover: none) {
+  .icon__tg:active {
+    color: #1696D9;
+  }
+}
 
 .header {
   padding-top: 24px;
@@ -2089,6 +2288,10 @@ a {
 }
 .header__button {
   height: 40px;
+}
+.header__icon {
+  width: 36px;
+  height: 36px;
 }
 
 .header.hide {

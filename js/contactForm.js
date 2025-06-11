@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
   const form = document.getElementById('contactForm');
   const modal = document.getElementById('formModal');
-  const closeBtn = modal.querySelector('.modal__close');
+  const closeBtn = modal.querySelector('.modal-final__close');
 
   form.addEventListener('submit', function (e) {
     e.preventDefault();

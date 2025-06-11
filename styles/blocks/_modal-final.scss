@@ -1,0 +1,91 @@
+.modal-final{
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+
+    &.active {
+        display: flex;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 52px;
+        gap: 12px;
+        isolation: isolate;
+
+        position: absolute;
+        width: 839px;
+        height: 356px;
+        left: calc(50% - 839px/2 + 0.5px);
+        top: calc(50% - 356px/2);
+        background: #EAEAF4;
+        border-radius: 32px;
+    }
+
+    &__icon {
+        position: absolute;
+        width: 429.69px;
+        height: 429.69px;
+        left: 475px;
+        top: 60px;
+        transform: rotate(-12.25deg);
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        z-index: 0;
+
+    }
+
+    &__button{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 342px;
+        height: 64px;
+        background: #3E3EF0;
+        border-radius: 16px;
+    }
+
+    &__title {
+        width: 489px;
+        height: 48px;
+        font-family: 'Wix Madefor Display';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 120%;
+        text-transform: uppercase;
+        color: #252533;
+
+    }
+
+    &__text {
+        width: 448px;
+        height: 96px;
+        font-family: 'Mulish';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 120%;
+        color: #4F4F5B;
+        margin-bottom: 20px;
+    }
+
+    &__close {
+        position: absolute;
+        top: 16px;
+        right: 16px;
+        font-size: 24px;
+        background: none;
+        border: none;
+        cursor: pointer;
+        color: var(--color-grey-close);
+    }
+}

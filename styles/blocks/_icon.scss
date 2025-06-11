@@ -1,0 +1,19 @@
+.icon{
+    &__wp{
+        width: 32px;
+        height: 32px;
+        color: #2CB742;
+        @include hover{
+            color: #1AA330;
+        }
+    }
+
+    &__tg{
+        width: 32px;
+        height: 32px;
+        color: #2AABEE;
+        @include hover{
+            color: #1696D9;
+        }
+    }
+}
