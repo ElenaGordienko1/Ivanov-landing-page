@@ -1,23 +1,30 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const form = document.getElementById('contactForm');
-  const modal = document.getElementById('formModal');
-  const closeBtn = modal.querySelector('.modal-final__close');
+  const forms = document.querySelectorAll('.contactForm');
+  const modalFinal = document.getElementById('formModal');
+  const closeBtnFinal = modalFinal.querySelector('.modal-final__close');
 
-  form.addEventListener('submit', function (e) {
-    e.preventDefault();
+  const modal = document.getElementById('modal'); 
 
-    modal.classList.add('active');
+  forms.forEach(form => {
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      
+      if (modal.classList.contains('active')) {
+        modal.classList.remove('active');
+      }
 
-    form.reset();
+      modalFinal.classList.add('active');
+      form.reset();
+    });
   });
 
-  closeBtn.addEventListener('click', () => {
-    modal.classList.remove('active');
+  closeBtnFinal.addEventListener('click', () => {
+    modalFinal.classList.remove('active');
   });
 
-  modal.addEventListener('click', (e) => {
-    if (e.target === modal) {
-      modal.classList.remove('active');
+  modalFinal.addEventListener('click', (e) => {
+    if (e.target === modalFinal) {
+      modalFinal.classList.remove('active');
     }
   });
 });

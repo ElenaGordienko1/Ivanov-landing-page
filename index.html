@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/images/Favicon-Only-Logo.ico" type="image/x-icon">
     <link rel="stylesheet" href="./styles/styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
     <title>Ivanov Drive</title>
@@ -47,7 +47,7 @@
                     </a>
                 </div>
                 <div class="header__contact-button hidden-mobile">
-                    <button class="header__button button" type="button">Оставить заявку</button>
+                    <button class="header__button button modal-open" type="button">Оставить заявку</button>
                 </div>
             </div>
         </div>
@@ -79,7 +79,7 @@
                             </a>
                         </div>
                         <div class="hero-header__contact-button hidden-mobile">
-                            <button class="hero-header__button button button--transparent" type="button">Оставить заявку</button>
+                            <button class="modal-open hero-header__button button button--transparent" type="button">Оставить заявку</button>
                         </div>
                     </div>
                 </div>
@@ -112,7 +112,7 @@
                                 <p class="hero__text-description">Все автомобили, которые мы доставляем, имеют необходимые документы. Мы гарантируем их качество и безопасность.</p>
                             </div>
                             <div class="hero__rating">
-                                <button class="hero__button button" type="button">Оставить заявку</button>
+                                <button class="modal-open hero__button button" type="button">Оставить заявку</button>
                                 <div class="hero__reviews">
                                     <div class="hero__reviews-first">
                                         <img src="./images/stars-icon.svg" alt="" class="hero__stars">
@@ -155,10 +155,16 @@
                             </div>
                             <div class="popular-cars__arrow arrow">
                                 <div class="popular-cars__arrow-left arrow-left">
-                                    <img class="arrow__left" src="./images/arrow-right.svg" alt="">
+                                    <svg class="arrow__svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.9751 4.94165L2.91676 9.99998L7.9751 15.0583" stroke="#ADADF6" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M17.0835 10H3.0585" stroke="#ADADF6" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
                                 </div>
                                 <div class="popular-cars__arrow-right arrow-right">
-                                    <img  src="./images/arrow-right.svg" alt="">
+                                    <svg class="arrow__svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12.0249 4.94165L17.0832 9.99998L12.0249 15.0583" stroke="#3E3EF0" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M2.9165 10H16.9415" stroke="#3E3EF0" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
                                 </div>
                             </div>
                         </div>
@@ -183,7 +189,7 @@
                                                             <span class="card__active-price">2 115 600 ₽</span>
                                                             <button class="card__passive-outline">Подробнее</button>
                                                             <div class="card__active-contact">
-                                                                <button class="card__active-button button">Заказать</button>
+                                                                <button class="modal-open card__active-button button">Заказать</button>
                                                                 <div class="header__contact-social">
                                                                     <a href="/" class="header__social-link" target="_blank">
                                                                         <svg class="header__icon icon__wp" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -219,7 +225,7 @@
                                                             <span class="card__active-price">2 115 600 ₽</span>
                                                             <button class="card__passive-outline">Подробнее</button>
                                                             <div class="card__active-contact">
-                                                                <button class="card__active-button button">Заказать</button>
+                                                                <button class="modal-open card__active-button button">Заказать</button>
                                                                 <div class="header__contact-social">
                                                                     <a href="/" class="header__social-link" target="_blank">
                                                                         <svg class=" header__icon icon__wp" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -255,7 +261,7 @@
                                                             <span class="card__active-price">2 115 600 ₽</span>
                                                             <button class="card__passive-outline">Подробнее</button>
                                                             <div class="card__active-contact">
-                                                                <button class="card__active-button button">Заказать</button>
+                                                                <button class="modal-open card__active-button button">Заказать</button>
                                                                 <div class="header__contact-social">
                                                                     <a href="/" class="header__social-link" target="_blank">
                                                                         <svg class=" header__icon icon__wp" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -291,7 +297,7 @@
                                                             <span class="card__active-price">2 115 600 ₽</span>
                                                             <button class="card__passive-outline">Подробнее</button>
                                                             <div class="card__active-contact">
-                                                                <button class="card__active-button button">Заказать</button>
+                                                                <button class="modal-open card__active-button button">Заказать</button>
                                                                 <div class="header__contact-social">
                                                                     <a href="/" class="header__social-link" target="_blank">
                                                                        <svg class=" header__icon icon__wp" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -327,7 +333,7 @@
                                                             <span class="card__active-price">2 115 600 ₽</span>
                                                             <button class="card__passive-outline">Подробнее</button>
                                                             <div class="card__active-contact">
-                                                                <button class="card__active-button button">Заказать</button>
+                                                                <button class="modal-open card__active-button button">Заказать</button>
                                                                 <div class="header__contact-social">
                                                                     <a href="/" class="header__social-link" target="_blank">
                                                                         <svg class="header__icon icon__wp" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -359,10 +365,16 @@
                             </div>
                             <div class="popular-cars__arrow arrow">
                                 <div class="popular-cars__arrow-left arrow-left">
-                                    <img src="./images/arrow-left.svg" alt="">
+                                    <svg class="arrow__svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.9751 4.94165L2.91676 9.99998L7.9751 15.0583" stroke="#ADADF6" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M17.0835 10H3.0585" stroke="#ADADF6" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
                                 </div>
                                 <div class="popular-cars__arrow-right arrow-right">
-                                    <img src="./images/arrow-right.svg" alt="">
+                                    <svg class="arrow__svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12.0249 4.94165L17.0832 9.99998L12.0249 15.0583" stroke="#3E3EF0" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M2.9165 10H16.9415" stroke="#3E3EF0" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
                                 </div>
                             </div>
                         </div>
@@ -387,7 +399,7 @@
                                                             <span class="card__active-price">2 115 600 ₽</span>
                                                             <button class="card__passive-outline">Подробнее</button>
                                                             <div class="card__active-contact">
-                                                                <button class="card__active-button button">Заказать</button>
+                                                                <button class="modal-open card__active-button button">Заказать</button>
                                                                 <div class="header__contact-social">
                                                                     <a href="/" class="header__social-link" target="_blank">
                                                                         <svg class="header__icon icon__wp" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -423,7 +435,7 @@
                                                             <span class="card__active-price">2 115 600 ₽</span>
                                                             <button class="card__passive-outline">Подробнее</button>
                                                             <div class="card__active-contact">
-                                                                <button class="card__active-button button">Заказать</button>
+                                                                <button class="modal-open card__active-button button">Заказать</button>
                                                                 <div class="header__contact-social">
                                                                     <a href="/" class="header__social-link" target="_blank">
                                                                         <svg class="header__icon icon__wp" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -459,7 +471,7 @@
                                                             <span class="card__active-price">2 115 600 ₽</span>
                                                             <button class="card__passive-outline">Подробнее</button>
                                                             <div class="card__active-contact">
-                                                                <button class="card__active-button button">Заказать</button>
+                                                                <button class="modal-open card__active-button button">Заказать</button>
                                                                 <div class="header__contact-social">
                                                                     <a href="/" class="header__social-link" target="_blank">
                                                                         <svg class=" header__icon icon__wp" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -495,7 +507,7 @@
                                                             <span class="card__active-price">2 115 600 ₽</span>
                                                             <button class="card__passive-outline">Подробнее</button>
                                                             <div class="card__active-contact">
-                                                                <button class="card__active-button button">Заказать</button>
+                                                                <button class="modal-open card__active-button button">Заказать</button>
                                                                 <div class="header__contact-social">
                                                                     <a href="/" class="header__icon header__social-link" target="_blank">
                                                                         <svg class="icon__wp" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -531,7 +543,7 @@
                                                             <span class="card__active-price">2 115 600 ₽</span>
                                                             <button class="card__passive-outline">Подробнее</button>
                                                             <div class="card__active-contact">
-                                                                <button class="card__active-button button">Заказать</button>
+                                                                <button class="modal-open card__active-button button">Заказать</button>
                                                                 <div class="header__contact-social">
                                                                     <a href="/" class="header__social-link" target="_blank">
                                                                         <svg class="header__icon icon__wp" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -563,10 +575,16 @@
                             </div>
                             <div class="popular-cars__arrow arrow">
                                 <div class="popular-cars__arrow-left arrow-left">
-                                    <img src="./images/arrow-left.svg" alt="">
+                                    <svg class="arrow__svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.9751 4.94165L2.91676 9.99998L7.9751 15.0583" stroke="#ADADF6" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M17.0835 10H3.0585" stroke="#ADADF6" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
                                 </div>
                                 <div class="popular-cars__arrow-right arrow-right">
-                                    <img src="./images/arrow-right.svg" alt="">
+                                    <svg class="arrow__svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12.0249 4.94165L17.0832 9.99998L12.0249 15.0583" stroke="#3E3EF0" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M2.9165 10H16.9415" stroke="#3E3EF0" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
                                 </div>
                             </div>
                         </div>
@@ -591,7 +609,7 @@
                                                             <span class="card__active-price">2 115 600 ₽</span>
                                                             <button class="card__passive-outline">Подробнее</button>
                                                             <div class="card__active-contact">
-                                                                <button class="card__active-button button">Заказать</button>
+                                                                <button class="modal-open card__active-button button">Заказать</button>
                                                                 <div class="header__contact-social">
                                                                     <a href="/" class="header__social-link" target="_blank">
                                                                         <svg class=" header__icon icon__wp" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -627,7 +645,7 @@
                                                             <span class="card__active-price">2 115 600 ₽</span>
                                                             <button class="card__passive-outline">Подробнее</button>
                                                             <div class="card__active-contact">
-                                                                <button class="card__active-button button">Заказать</button>
+                                                                <button class="modal-open card__active-button button">Заказать</button>
                                                                 <div class="header__contact-social">
                                                                     <a href="/" class="header__social-link" target="_blank">
                                                                         <svg class="header__icon icon__wp" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -663,7 +681,7 @@
                                                             <span class="card__active-price">2 115 600 ₽</span>
                                                             <button class="card__passive-outline">Подробнее</button>
                                                             <div class="card__active-contact">
-                                                                <button class="card__active-button button">Заказать</button>
+                                                                <button class="modal-open card__active-button button">Заказать</button>
                                                                 <div class="header__contact-social">
                                                                     <a href="/" class="header__social-link" target="_blank">
                                                                         <svg class="header__icon icon__wp" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -699,7 +717,7 @@
                                                             <span class="card__active-price">2 115 600 ₽</span>
                                                             <button class="card__passive-outline">Подробнее</button>
                                                             <div class="card__active-contact">
-                                                                <button class="card__active-button button">Заказать</button>
+                                                                <button class="modal-open card__active-button button">Заказать</button>
                                                                 <div class="header__contact-social">
                                                                     <a href="/" class="header__social-link" target="_blank">
                                                                         <svg class="header__icon icon__wp" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -735,7 +753,7 @@
                                                             <span class="card__active-price">2 115 600 ₽</span>
                                                             <button class="card__passive-outline">Подробнее</button>
                                                             <div class="card__active-contact">
-                                                                <button class="card__active-button button">Заказать</button>
+                                                                <button class="modal-open card__active-button button">Заказать</button>
                                                                 <div class="header__contact-social">
                                                                     <a href="/" class="header__social-link" target="_blank">
                                                                         <svg class="header__icon icon__wp" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -787,7 +805,7 @@
                                 </div>
                             </div>
                             <div class="about-us__rating hero__rating">
-                                <button class="about-us__button hero__button button" type="button">Оставить заявку</button>
+                                <button class="modal-open about-us__button hero__button button" type="button">Оставить заявку</button>
                                 <div class="hero__reviews">
                                     <div class="hero__reviews-first">
                                         <img src="./images/stars-icon.svg" alt="" class="hero__stars">
@@ -837,7 +855,7 @@
         </section>
         <section id="reviews" class="section">
             <div class="reviews">
-                <div class="reviews__inner container slider-section">
+                <div class="reviews__inner container slider-sections">
                     <div class="reviews__text">
                         <h3 class="reviews__title">Отзывы</h3>
                         <p class="reviews__description">Посмотрите что говорят о нас счастливые владельцы новых авто.</p>
@@ -883,10 +901,16 @@
                         </div>
                         <div class="reviews__arrow arrow">
                             <div class="reviews__arrow-left arrow-left next-btn-left">
-                                <img src="./images/arrow-left.svg" alt="">
+                                <svg class="arrow__svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.9751 4.94165L2.91676 9.99998L7.9751 15.0583" stroke="#ADADF6" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M17.0835 10H3.0585" stroke="#ADADF6" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
                             </div>
                             <div class="reviews__arrow-right arrow-right next-btn-right">
-                                <img src="./images/arrow-right.svg" alt="">
+                                <svg class="arrow__svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12.0249 4.94165L17.0832 9.99998L12.0249 15.0583" stroke="#3E3EF0" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M2.9165 10H16.9415" stroke="#3E3EF0" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
                             </div>
                         </div>
                     </div>
@@ -1154,18 +1178,24 @@
         <section class="section">
             <div class="schema">
                 <div class="schema__inner container">
-                    <div class="schema__steps slider-section">
+                    <div class="schema__steps slider-sections">
                         <div class="schema__header">
                             <div class="schema__text">
                                 <h3 class="schema__title">Схема работы</h3>
                                 <p class="schema__description">Прозрачное ценообразование с подробным разъяснением затрат на каждом этапе</p>
                             </div>
                             <div class="schema__arrow arrow">
-                                <div class="schema__arrow-left arrow-left" >
-                                    <img src="./images/arrow-left.svg" alt="">
+                                <div class="schema__arrow-left arrow-left next-btn-left" >
+                                    <svg class="arrow__svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.9751 4.94165L2.91676 9.99998L7.9751 15.0583" stroke="#ADADF6" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M17.0835 10H3.0585" stroke="#ADADF6" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
                                 </div>
-                                <div class="schema__arrow-right arrow-right">
-                                    <img src="./images/arrow-right.svg" alt="">
+                                <div class="schema__arrow-right arrow-right next-btn-right">
+                                    <svg class="arrow__svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12.0249 4.94165L17.0832 9.99998L12.0249 15.0583" stroke="#3E3EF0" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M2.9165 10H16.9415" stroke="#3E3EF0" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
                                 </div>
                             </div>
                         </div>
@@ -1184,7 +1214,7 @@
                                         <p class="schema__content-title">Бесплатная консультация</p>
                                         <p class="schema__content-description">Анализируем стоимость автомобиля c учетом ваших пожеланий</p>
                                         <div class="schema__content-button">
-                                            <button class="schema__button button">Заявка на консультацию</button>
+                                            <button class="modal-open schema__button button">Заявка на консультацию</button>
                                             <div class="header__contact-social">
                                                 <a href="/" class="header__social-link" target="_blank">
                                                     <svg class="icon__wp" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1271,7 +1301,7 @@
                                     <p class="schema__price-text">Примерная стоимость:</p>
                                     <p class="schema__price-number">от 15 000 ₽</p>
                                 </div>
-                                <div class="schema__button button">Оставить заявку</div>
+                                <div class="modal-open schema__button button">Оставить заявку</div>
                             </div>
                             <div class="schema__form-info">
                                 <p>Cроки и стоимость указаны для доставки из Владивостока до Вашего города. Время ожидания к отправке из Владивостока: от 1 до 20 дней</p>
@@ -1356,7 +1386,7 @@
                             <p class="contacts__form-title">Оставить заявку можно тут</p>
                         </div>
                         <div class="contacts__form-input">
-                            <form action="" class="contacts__login" id="contactForm" >
+                            <form action="" class="contacts__login contactForm" >
                                 <div class="contacts__fields">
                                     <div class="contacts__field">
                                         <label class="contacts__label" for="name">Ваше имя</label>
@@ -1404,48 +1434,70 @@
                 <p class="modal-final__text">Мы ценим ваш выбор и будем рады помочь. Наша команда уже приступила к работе над вашей заявкой. Мы свяжемся с вами в ближайшее время!</p>
                 <button class="modal-final__button button">Вернуться на главную</button>
                 <img src="./images/medal.png" alt="" class="modal-final__icon">
-                <button class="modal-final__close" aria-label="Закрыть">&times;</button>
+                <button class="modal-final__close modal__close" aria-label="Закрыть">
+                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 21L7 7" stroke="#A3A3AA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M7 21L21 7" stroke="#A3A3AA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
             </div>
         </div>
-        <div class="modal">
-            <div class="modal__overlay"></div>
-            <div class="modal__content">
-                <button class="modal__close"></button>
-                <div class="modal__header">
-                    <h4 class="modal__title">Оставьте <span>заявку!</span></h4>
-                    <p class="modal__subtitle">Мы перезвоним вам в течение 15 минут, чтобы уточнить детали и рассчитать стоимость</p>
+    
+        <div class="modal" id="modal">
+        <div class="modal__overlay"></div>
+        <div class="modal__content">
+            <div class="modal__form contacts__form"> 
+                <button class="modal__close" aria-label="Закрыть">
+                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 21L7 7" stroke="#A3A3AA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M7 21L21 7" stroke="#A3A3AA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+                <div class="modal__form-text contacts__form-text">
+                    <p class="modal__title contacts__form-title">Оставьте заявку</p>
+                    <p class="modal__description">Оставьте заявку и менеджер отправит Вам актуальные варианты автомобилей под Ваши требования.</p>
                 </div>
-
-                <div class="modal__form">
-                    <div class="modal__form-row">
-                        <div class="modal__form-cell">
-                            <input
-                                    class="modal__form-input"
-                                    placeholder="Имя"
-                            />
+                <div class="contacts__form-input">
+                    <form action="" class="contacts__login contactForm">
+                        <div class="contacts__fields">
+                            <div class="contacts__field">
+                                <label class="contacts__label" for="name">Ваше имя</label>
+                                <input class="contacts__field-input"
+                                type="text"
+                                id="name"
+                                name="name"
+                                placeholder="Введите имя"
+                                required
+                                />
+                            </div>
+                            <div class="contacts__field">
+                                <label class="contacts__label" for="phone">Ваш номер</label>
+                                <input class="contacts__field-input"
+                                type="tel"
+                                id="phone"
+                                name="phone"
+                                placeholder="+7 (___) ___-__-__"
+                                pattern="^\+7\s?\(?\d{3}\)?\s?\d{3}-?\d{2}-?\d{2}$"
+                                required
+                                />
+                            </div>
                         </div>
-                        <div class="modal__form-cell">
-                            <input
-                                    class="modal__form-input"
-                                    placeholder="Номер телефона"
-                            />
+                        <div class="contacts__field-textarea">
+                            <label class="contacts__label" for="message">Уточните свой вопрос</label>
+                            <textarea class="contacts__textarea"
+                            id="message"
+                            name="message"
+                            placeholder="Введите текст сообщения, укажите страну, марку и год машины."
+                            ></textarea>
                         </div>
-                    </div>
-                    <div class="modal__form-cell--long">
-                        <input
-                                class="modal__form-input--long"
-                                placeholder="Уточните свой вопрос"
-                        />
-                    </div>
-                    <div class="policy">
-                        <input type="checkbox" class="policy__checkbox" name="" checked>
-                        <label for="policy" class="policy__label">
-                            С правилами <a href="/">политики конфиденциальности</a> ознакомлен
-                        </label>
-                    </div>
+                        <div class="contacts__button">
+                            <button type="submit" class="contacts__button-button button">Оставить заявку</button>
+                            <p class="contacts__politic">Нажимая на кнопку, вы соглашаетесь с <a href="" class="contacts__violet">Политикой конфиденциальности</a></p>
+                        </div>
+                    </form>
                 </div>
-                <button class="button">Оставить заявку</button>
-            </div>
+            </div>  
+        </div>
         </div>
     </main>
     <footer class="footer">

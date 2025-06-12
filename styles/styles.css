@@ -198,6 +198,7 @@ svg * {
   --color-border: #E3E3E6;
   --color-border-light: #CDCDD2;
   --color-grey-hover: #DDDDEB;
+  --color-grey-close: #A3A3AA;
   --shadow-default: 0px 8px 60px 0px #0C0C410F;
   --border-radius: 16px;
   --border-radius-small:10px;
@@ -293,6 +294,7 @@ a {
   background-color: var(--color-accent);
   border-radius: var(--border-radius-small);
   border: none;
+  cursor: pointer;
 }
 @media (hover: hover) {
   .button:hover {
@@ -336,21 +338,16 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: background-color 0.3s ease;
 }
-.arrow__left {
-  transform: scale(-1, 1);
+.arrow-left:hover, .arrow-right:hover {
+  background-color: var(--color-accent);
 }
-@media (hover: hover) {
-  .arrow__left:hover {
-    background-color: var(--color-accent-alt);
-    color: var(--color-light);
-  }
+.arrow-left:hover .arrow__svg path, .arrow-right:hover .arrow__svg path {
+  stroke: var(--color-light);
 }
-@media (hover: none) {
-  .arrow__left:active {
-    background-color: var(--color-accent-alt);
-    color: var(--color-light);
-  }
+.arrow__svg {
+  color: var(--color-accent);
 }
 
 .card {
@@ -1688,7 +1685,7 @@ a {
 .modal-final {
   position: fixed;
   inset: 0;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(37, 37, 51, 0.6);
   display: none;
   justify-content: center;
   align-items: center;
@@ -1731,24 +1728,24 @@ a {
   align-items: center;
   width: 342px;
   height: 64px;
-  background: #3E3EF0;
+  background: var(--color-accent);
   border-radius: 16px;
 }
 .modal-final__title {
   width: 489px;
   height: 48px;
-  font-family: "Wix Madefor Display";
+  font-family: var(--font-family-large-text);
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
   line-height: 120%;
   text-transform: uppercase;
-  color: #252533;
+  color: var(--color-dark);
 }
 .modal-final__text {
   width: 448px;
   height: 96px;
-  font-family: "Mulish";
+  font-family: var(--font-family-small-text);
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -1768,38 +1765,107 @@ a {
 }
 
 .modal {
-  display: none;
   position: fixed;
   inset: 0;
-  z-index: 1000;
+  display: none;
   justify-content: center;
   align-items: center;
+  z-index: 999;
 }
-.modal.is-active {
+.modal.active {
   display: flex;
 }
 .modal__overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(37, 37, 51, 0.6);
 }
 .modal__content {
-  position: relative;
-  z-index: 1;
-  background: #fff;
-  padding: 2rem;
-  border-radius: 12px;
-  max-width: 600px;
-  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 52px;
+  gap: 32px;
+  isolation: isolate;
+  position: absolute;
+  width: 708px;
+  height: 640px;
+  left: calc(50% - 354px);
+  top: calc(50% - 320px);
+  background: #EAEAF4;
+  border-radius: 32px;
 }
 .modal__close {
   position: absolute;
-  top: 1rem;
-  right: 1rem;
-  font-size: 1.5rem;
+  top: 8px;
+  right: 12px;
   background: none;
   border: none;
+  font-size: 24px;
   cursor: pointer;
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  margin-top: 12px;
+  margin-right: 12px;
+  color: var(--color-grey-close);
+  font-size: 32px;
+}
+.modal__form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 52px;
+  gap: 32px;
+  isolation: isolate;
+  position: absolute;
+  width: 708px;
+  height: 640px;
+  left: calc(50% - 354px);
+  top: calc(50% - 320px);
+  background: #EAEAF4;
+  border-radius: 32px;
+}
+.modal__form-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 12px;
+  width: 604px;
+  height: 108px;
+}
+.modal__description {
+  width: 604px;
+  height: 48px;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 120%;
+  text-align: center;
+  color: #4F4F5B;
+}
+.modal__title {
+  width: 604px;
+  height: 48px;
+  font-family: "Wix Madefor Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 120%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #252533;
+}
+.modal__login {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 40px;
+  width: 604px;
+  height: 396px;
 }
 
 .reviews {
