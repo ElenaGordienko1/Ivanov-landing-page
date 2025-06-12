@@ -1416,7 +1416,7 @@ a {
   font-weight: 500;
   font-size: 18px;
   line-height: 23px;
-  color: #A3A3AA;
+  color: var(--color-dark);
 }
 .contacts__button {
   display: flex;
