@@ -1,5 +1,8 @@
 # Ivanov-landing-page
 
+### Деплой:
+### https://elenagordienko1.github.io/Ivanov-landing-page/
+
 ### О проекте
 Это главная страница сайта Ivanoov Drive — платформы по покупке автомобилей. Проект реализован с использованием HTML, CSS (SCSS) и JavaScript.
 ### Автор: Елена Гордиенко
