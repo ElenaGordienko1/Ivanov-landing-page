@@ -16,7 +16,7 @@
     justify-content: center;
     transition: background-color 0.3s ease;
 
-    &:hover {
+    &:not(.is-disabled):hover {
       background-color: var(--color-accent);
 
       .arrow__svg path {

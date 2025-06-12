@@ -23,13 +23,18 @@ document.querySelectorAll('.splide').forEach((slider) => {
     arrowRight.addEventListener('click', () => splide.go('>'));
 
     splide.on('moved', () => {
-      arrowLeft.style.opacity = splide.index === 0 ? '0.5' : '1';
-      arrowLeft.style.cursor = splide.index === 0 ? 'default' : 'pointer';
+    const atStart = splide.index === 0;
+    const atEnd = splide.index >= splide.length - splide.options.perPage;
 
-      const isEnd = splide.index >= splide.length - splide.options.perPage;
-      arrowRight.style.opacity = isEnd ? '0.5' : '1';
-      arrowRight.style.cursor = isEnd ? 'default' : 'pointer';
-    });
+    arrowLeft.style.opacity = atStart ? '0.5' : '1';
+    arrowLeft.style.cursor = atStart ? 'default' : 'pointer';
+    arrowLeft.classList.toggle('is-disabled', atStart);
+
+    arrowRight.style.opacity = atEnd ? '0.5' : '1';
+    arrowRight.style.cursor = atEnd ? 'default' : 'pointer';
+    arrowRight.classList.toggle('is-disabled', atEnd);
+  });
+
 
     splide.emit('moved');
   }

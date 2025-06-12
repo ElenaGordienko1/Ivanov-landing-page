@@ -14,10 +14,12 @@ document.querySelectorAll('.custom-select').forEach(select => {
       options.forEach(opt => opt.classList.remove('custom-select__option--selected'));
       option.classList.add('custom-select__option--selected');
 
+      header.classList.add('selected');
+
       select.classList.remove('active');
     });
   });
-  
+
   document.addEventListener('click', (e) => {
     if (!select.contains(e.target)) {
       select.classList.remove('active');

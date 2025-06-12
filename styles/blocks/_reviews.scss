@@ -9,6 +9,7 @@
     padding-bottom: 100px;
     background: var(--color-light);
     position: relative;
+    overflow-x: visible;
   }
 
   &__text {
@@ -150,11 +151,10 @@
   &__scroll-slider {
     display: flex;
     flex-wrap: nowrap;
-    overflow-x: auto;
     scroll-behavior: smooth;
     max-width: 100%;
     gap:20px;
-    width: 1400px;
+    width: 5000px;
     box-shadow: var(--shadow-default);
   }
 

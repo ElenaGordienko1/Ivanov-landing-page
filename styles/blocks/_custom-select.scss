@@ -15,6 +15,7 @@
     height: 51px;
     background: var(--color-grey-addition);
     border-radius: var(--border-radius-small);
+    border: 2px solid transparent;
     cursor: pointer;
     background-image: url('/images/arrow-down.svg');
     background-repeat: no-repeat;
@@ -26,9 +27,10 @@
     line-height: 23px;
     color: var(--color-grey-description);
 
-    &::after {
-      color: var(--color-accent);
+    &.selected {
+      color: var(--color-dark); 
     }
+
   }
 
   &__body {
@@ -43,7 +45,7 @@
     padding: 6px 0;
     gap: 4px;
     width: 569px;
-    height: 220px;
+    height: 150px;
     background: var(--color-grey-addition);
     border-radius: var(--border-radius-small);
     scrollbar-width: none;
@@ -89,4 +91,9 @@
   &.active .custom-select__body {
     display: flex;
   }
+  
+  &.active .custom-select__header {
+    border-color: var(--color-accent);
+  }
 }
+
