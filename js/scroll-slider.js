@@ -1,44 +1,76 @@
 document.querySelectorAll('.slider-sections').forEach(section => {
-  const slider = section.querySelector('.slider');
-  const btnLeft = section.querySelector('.next-btn-left');
-  const btnRight = section.querySelector('.next-btn-right');
+  const swiperEl = section.querySelector('.swiper');
+  const btnNext = section.querySelector('.next-btn-right');
+  const btnPrev = section.querySelector('.next-btn-left');
 
-  function getSlideWidth() {
-    const slide = slider.querySelector('[class$="__slide"]');
-    if (!slide) return 0;
-    const style = getComputedStyle(slide);
-    const marginRight = parseInt(style.marginRight || 0);
-    return slide.offsetWidth + marginRight;
-  }
-
-  function updateArrows() {
-    const maxScrollLeft = slider.scrollWidth - slider.clientWidth;
-
-    if (btnLeft) {
-      const atStart = slider.scrollLeft <= 0;
-      btnLeft.style.opacity = atStart ? '0.5' : '1';
-      btnLeft.style.pointerEvents = atStart ? 'none' : 'auto';
-      btnLeft.style.cursor = atStart ? 'default' : 'pointer';
+  const swiper = new Swiper(swiperEl, {
+    slidesPerView: 'auto',
+    spaceBetween: 16,
+    centeredSlides: false,
+    pagination: {
+      clickable: true,
+    },
+    navigation: {
+      nextEl: btnNext,
+      prevEl: btnPrev,
+    },
+    scrollbar: {
+      el: section.querySelector('.swiper-scrollbar'),
+      draggable: true,
+    },
+    on: {
+      init() {
+        updateArrowState(this);
+        fixReachEnd(this);
+      },
+      slideChange() {
+        updateArrowState(this);
+        fixReachEnd(this);
+      },
+      resize() {
+        updateArrowState(this);
+        fixReachEnd(this);
+      },
+      reachEnd() {
+        updateArrowState(this);
+      },
+      reachBeginning() {
+        updateArrowState(this);
+      }
     }
-
-    if (btnRight) {
-      const atEnd = slider.scrollLeft >= maxScrollLeft - 1;
-      btnRight.style.opacity = atEnd ? '0.5' : '1';
-      btnRight.style.pointerEvents = atEnd ? 'none' : 'auto';
-      btnRight.style.cursor = atEnd ? 'default' : 'pointer';
-    }
-  }
-
-  btnLeft?.addEventListener('click', () => {
-    slider.scrollBy({ left: -getSlideWidth(), behavior: 'smooth' });
   });
 
-  btnRight?.addEventListener('click', () => {
-    slider.scrollBy({ left: getSlideWidth(), behavior: 'smooth' });
-  });
+  function updateArrowState(swiperInstance) {
+    const isBeginning = swiperInstance.isBeginning;
+    const isTrueEnd = checkTrueReachEnd(swiperInstance); // наша доп. проверка
 
-  slider.addEventListener('scroll', updateArrows);
+    if (btnPrev) {
+      btnPrev.style.opacity = isBeginning ? '0.5' : '1';
+      btnPrev.style.pointerEvents = isBeginning ? 'none' : 'auto';
+      btnPrev.style.cursor = isBeginning ? 'default' : 'pointer';
+    }
 
-  // Инициализация стрелок после загрузки
-  window.addEventListener('load', updateArrows);
+    if (btnNext) {
+      btnNext.style.opacity = isTrueEnd ? '0.5' : '1';
+      btnNext.style.pointerEvents = isTrueEnd ? 'none' : 'auto';
+      btnNext.style.cursor = isTrueEnd ? 'default' : 'pointer';
+    }
+  }
+
+  // Проверка, действительно ли последний слайд "встал первым"
+  function checkTrueReachEnd(swiper) {
+    const lastSlide = swiper.slides[swiper.slides.length - 1];
+    const wrapperRect = swiper.el.querySelector('.swiper-wrapper').getBoundingClientRect();
+    const lastRect = lastSlide.getBoundingClientRect();
+
+    // Проверяем, находится ли левый край последнего слайда внутри области обёртки
+    return lastRect.left >= wrapperRect.left && lastRect.right <= wrapperRect.right;
+  }
+
+  function fixReachEnd(swiper) {
+    // Обновим isEnd вручную, если нужно
+    if (!checkTrueReachEnd(swiper)) {
+      swiper.isEnd = false;
+    }
+  }
 });

@@ -6,17 +6,12 @@
     padding-top: 80px;
   }
 
-  &__steps {
-    display: flex;
-    flex-direction: column;
-    gap: 52px;
-  }
-
   &__header {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 52px;
   }
 
   &__text {
@@ -55,8 +50,9 @@
     align-items: center;
     padding: 8px;
     gap: 32px;
-    width: 648px;
+    width: 648px !important;
     height: 252px;
+    margin-right: 20px !important;
     background: var(--color-light);
     border-radius: var(--border-radius);
   }
@@ -100,11 +96,9 @@
   &__scroll-slider {
     display: flex;
     flex-wrap: nowrap;
-    overflow-x: auto;
     scroll-behavior: smooth;
-    max-width: 100%;
     gap:20px;
-    box-shadow: var(--shadow-default);
+    width: 150%;
   }
 
   &__body {

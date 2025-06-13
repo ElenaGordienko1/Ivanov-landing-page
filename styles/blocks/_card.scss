@@ -115,6 +115,7 @@
     }
 
     &-image {
+      position: relative;
       width: 312px;
       height: 232px;
     }
@@ -156,4 +157,89 @@
       display: none;
     }
   }
+
+  &__image{
+
+    &-metric{
+      position: absolute;
+      display: flex;
+      flex-direction: row;
+    }
+  }
+
+  &__year{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 4px 14px;
+    gap: 10px;
+    position: absolute;
+    height: 28px;
+    left: 16px;
+    top: 16px;
+    background: rgba(235, 235, 240, 0.12);
+    backdrop-filter: blur(16px);
+    border-radius: 16px;
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+
+    color: #F7F7FA;
+
+  }
+
+  &__type{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 4px 12px;
+    gap: 10px;
+    position: absolute;
+    width: 44px;
+    height: 28px;
+    left: 367px;
+    top: 16px;
+    background: #2CB742;
+    backdrop-filter: blur(16px);
+    border-radius: 16px;
+    cursor: pointer;
+
+    &:hover .card__tooltip {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  &__tooltip {
+    position: absolute;
+    top: 125%; 
+    left: 10%;
+    transform: translateX(-50%);
+    z-index: 10;
+    opacity: 0;
+    height: 26px;
+    width: 77px;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    pointer-events: none;
+    background: #F7F7FA;
+    text-align: center;
+    backdrop-filter: blur(16px);
+    border-radius: 16px;
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    color: #797983;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+  }
+
 }

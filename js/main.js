@@ -4,7 +4,6 @@ document.querySelectorAll('.splide').forEach((slider) => {
     perPage: 3,
     perMove: 1,
     focus: 0,
-    fixedWidth: '760px',
     gap: '20px',
     pagination: false,
     arrows: false,
@@ -15,8 +14,8 @@ document.querySelectorAll('.splide').forEach((slider) => {
   splide.mount();
 
   const container = slider.closest('.slider-section');
-  const arrowLeft = container?.querySelector('.popular-cars__arrow-left');
-  const arrowRight = container?.querySelector('.popular-cars__arrow-right');
+  const arrowLeft = container?.querySelector('.arrow-left');
+  const arrowRight = container?.querySelector('.arrow-right');
 
   if (arrowLeft && arrowRight) {
     arrowLeft.addEventListener('click', () => splide.go('<'));

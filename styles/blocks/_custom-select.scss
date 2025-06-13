@@ -48,7 +48,8 @@
     height: 150px;
     background: var(--color-grey-addition);
     border-radius: var(--border-radius-small);
-    scrollbar-width: none;
+    overflow-x: hidden; 
+     overflow-y: auto;
   }
 
   &__label {
