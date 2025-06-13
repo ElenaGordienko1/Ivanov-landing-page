@@ -98,7 +98,7 @@
     flex-wrap: nowrap;
     scroll-behavior: smooth;
     gap:20px;
-    width: 150%;
+    width: 200%;
   }
 
   &__body {
@@ -314,5 +314,13 @@
       right: -705px;
 
     }
+
+  &__track{
+    width: 150%;
+  }
+
+  &__list{
+    width: 150%;
+  }
 
 }

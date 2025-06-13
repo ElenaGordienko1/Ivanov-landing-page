@@ -2123,6 +2123,9 @@ a {
   line-height: 23px;
   color: var(--color-dark);
 }
+.reviews__track {
+  width: 150%;
+}
 
 .about-us__inner {
   display: flex;
@@ -2405,7 +2408,7 @@ a {
   flex-wrap: nowrap;
   scroll-behavior: smooth;
   gap: 20px;
-  width: 150%;
+  width: 200%;
 }
 .schema__body {
   display: flex;
@@ -2600,8 +2603,17 @@ a {
   bottom: 0px;
   right: -705px;
 }
+.schema__track {
+  width: 150%;
+}
+.schema__list {
+  width: 150%;
+}
 
 .card-slider {
+  width: 150%;
+}
+.card-slider__track {
   width: 150%;
 }
 .card-slider__slide {

@@ -1,6 +1,10 @@
 .card-slider {
   width: 150%;
 
+  &__track{
+    width: 150%;
+  }
+
   &__slide {
     display: flex !important;
     flex-direction: row !important;
