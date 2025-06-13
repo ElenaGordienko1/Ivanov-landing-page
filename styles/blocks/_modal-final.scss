@@ -18,14 +18,13 @@
         padding: 52px;
         gap: 12px;
         isolation: isolate;
-
         position: absolute;
         width: 839px;
         height: 356px;
         left: calc(50% - 839px/2 + 0.5px);
         top: calc(50% - 356px/2);
-        background: #EAEAF4;
-        border-radius: 32px;
+        background: var(--color-grey-addition);
+        border-radius: 32px; 
     }
 
     &__icon {
@@ -39,7 +38,6 @@
         order: 0;
         flex-grow: 0;
         z-index: 0;
-
     }
 
     &__button{
@@ -50,7 +48,7 @@
         width: 342px;
         height: 64px;
         background: var(--color-accent);
-        border-radius: 16px;
+        border-radius: var(--border-radius);
     }
 
     &__title {
@@ -63,7 +61,6 @@
         line-height: 120%;
         text-transform: uppercase;
         color: var(--color-dark);
-
     }
 
     &__text {
@@ -74,7 +71,7 @@
         font-weight: 400;
         font-size: 20px;
         line-height: 120%;
-        color: #4F4F5B;
+        color: var(--color-dark-description);
         margin-bottom: 20px;
     }
 

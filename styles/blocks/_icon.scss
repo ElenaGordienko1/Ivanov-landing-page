@@ -2,18 +2,18 @@
     &__wp{
         width: 32px;
         height: 32px;
-        color: #2CB742;
+        color: var(--color-type-green);
         @include hover{
-            color: #1AA330;
+            color: var(--color-type-green-alt);
         }
     }
 
     &__tg{
         width: 32px;
         height: 32px;
-        color: #2AABEE;
+        color: var(--color-type-blue-alt);
         @include hover{
-            color: #1696D9;
+            color: var(--color-type-blue-alt);
         }
     }
 }

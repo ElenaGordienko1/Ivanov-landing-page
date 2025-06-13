@@ -199,6 +199,10 @@ svg * {
   --color-border-light: #CDCDD2;
   --color-grey-hover: #DDDDEB;
   --color-grey-close: #A3A3AA;
+  --color-type-green: #2CB742;
+  --color-type-green-alt: #1AA330;
+  --color-type-blue: #2AABEE;
+  --color-type-blue-alt: #1696D9;
   --shadow-default: 0px 0px 60px 0px #0C0C410F;
   --border-radius: 16px;
   --border-radius-small:10px;
@@ -510,14 +514,14 @@ a {
   background: rgba(235, 235, 240, 0.12);
   -webkit-backdrop-filter: blur(16px);
           backdrop-filter: blur(16px);
-  border-radius: 16px;
-  font-family: "Mulish";
+  border-radius: var(--border-radius);
+  font-family: var(--font-family-small-text);
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
   text-align: right;
-  color: #F7F7FA;
+  color: var(--color-light);
 }
 .card__type {
   display: flex;
@@ -531,10 +535,10 @@ a {
   height: 28px;
   left: 367px;
   top: 16px;
-  background: #2CB742;
+  background: var(--color-type-green);
   -webkit-backdrop-filter: blur(16px);
           backdrop-filter: blur(16px);
-  border-radius: 16px;
+  border-radius: var(--border-radius);
   cursor: pointer;
 }
 .card__type:hover .card__tooltip {
@@ -553,17 +557,17 @@ a {
   visibility: hidden;
   transition: opacity 0.3s ease, visibility 0.3s ease;
   pointer-events: none;
-  background: #F7F7FA;
+  background: var(--color-light);
   text-align: center;
   -webkit-backdrop-filter: blur(16px);
           backdrop-filter: blur(16px);
-  border-radius: 16px;
-  font-family: "Mulish";
+  border-radius: var(--border-radius);
+  font-family: var(--font-family-small-text);
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 18px;
-  color: #797983;
+  color: var(--color-grey-description-alt);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1681,7 +1685,7 @@ a {
   font-family: var(--font-family-small-text);
   font-style: normal;
   font-weight: 600;
-  color: #252533;
+  color: var(--color-dark);
 }
 @media (max-width: 1124px) {
   .hero__review {
@@ -1724,7 +1728,7 @@ a {
   height: 356px;
   left: calc(50% - 419.5px + 0.5px);
   top: calc(50% - 178px);
-  background: #EAEAF4;
+  background: var(--color-grey-addition);
   border-radius: 32px;
 }
 .modal-final__icon {
@@ -1747,7 +1751,7 @@ a {
   width: 342px;
   height: 64px;
   background: var(--color-accent);
-  border-radius: 16px;
+  border-radius: var(--border-radius);
 }
 .modal-final__title {
   width: 489px;
@@ -1768,7 +1772,7 @@ a {
   font-weight: 400;
   font-size: 20px;
   line-height: 120%;
-  color: #4F4F5B;
+  color: var(--color-dark-description);
   margin-bottom: 20px;
 }
 .modal-final__close {
@@ -1810,7 +1814,7 @@ a {
   height: 640px;
   left: calc(50% - 354px);
   top: calc(50% - 320px);
-  background: #EAEAF4;
+  background: var(--color-grey-addition);
   border-radius: 32px;
 }
 .modal__close {
@@ -1841,7 +1845,7 @@ a {
   height: 640px;
   left: calc(50% - 354px);
   top: calc(50% - 320px);
-  background: #EAEAF4;
+  background: var(--color-grey-addition);
   border-radius: 32px;
 }
 .modal__form-text {
@@ -1856,25 +1860,25 @@ a {
 .modal__description {
   width: 604px;
   height: 48px;
-  font-family: "Mulish";
+  font-family: var(--font-family-small-text);
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 120%;
   text-align: center;
-  color: #4F4F5B;
+  color: var(--color-dark-description);
 }
 .modal__title {
   width: 604px;
   height: 48px;
-  font-family: "Wix Madefor Display";
+  font-family: var(--font-family-large-text);
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
   line-height: 120%;
   text-align: center;
   text-transform: uppercase;
-  color: #252533;
+  color: var(--color-dark);
 }
 .modal__login {
   display: flex;
@@ -2289,31 +2293,31 @@ a {
 .icon__wp {
   width: 32px;
   height: 32px;
-  color: #2CB742;
+  color: var(--color-type-green);
 }
 @media (hover: hover) {
   .icon__wp:hover {
-    color: #1AA330;
+    color: var(--color-type-green-alt);
   }
 }
 @media (hover: none) {
   .icon__wp:active {
-    color: #1AA330;
+    color: var(--color-type-green-alt);
   }
 }
 .icon__tg {
   width: 32px;
   height: 32px;
-  color: #2AABEE;
+  color: var(--color-type-blue-alt);
 }
 @media (hover: hover) {
   .icon__tg:hover {
-    color: #1696D9;
+    color: var(--color-type-blue-alt);
   }
 }
 @media (hover: none) {
   .icon__tg:active {
-    color: #1696D9;
+    color: var(--color-type-blue-alt);
   }
 }
 
