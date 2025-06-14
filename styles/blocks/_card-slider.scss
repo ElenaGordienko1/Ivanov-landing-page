@@ -15,6 +15,13 @@
     background: var(--color-light) !important;
     border-radius: var(--border-radius) !important;
 
+    @include mobile{
+      width: 312px !important;
+    }
+    @include tablet{
+      width: 312px !important;
+    }
+
     &:not(.is-active) {
       flex-direction: column !important;
       align-items: flex-start;

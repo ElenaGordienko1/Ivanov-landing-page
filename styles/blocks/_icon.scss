@@ -1,16 +1,18 @@
 .icon{
     &__wp{
-        width: 32px;
-        height: 32px;
+        width: 28px;
+        height: 28px;
         color: var(--color-type-green);
+        margin-top: 5px;
         @include hover{
             color: var(--color-type-green-alt);
         }
     }
 
     &__tg{
-        width: 32px;
-        height: 32px;
+        width: 28px;
+        height: 28px;
+        margin-top: 5px;
         color: var(--color-type-blue-alt);
         @include hover{
             color: var(--color-type-blue-alt);

@@ -354,223 +354,243 @@ a {
   color: var(--color-accent);
 }
 
-.card {
-  transition: transform 0.4s ease;
-  width: auto;
-  flex-shrink: 0;
-  scroll-snap-align: start;
+.popular-cars {
+  padding-top: 100px;
+  background-color: var(--color-grey-addition);
 }
-.card__active {
+@media (max-width: 1401px) {
+  .popular-cars {
+    padding: 40px 16px 30px 16px;
+  }
+}
+@media (max-width: 1124px) {
+  .popular-cars {
+    padding: 30px 16px 30px 16px;
+  }
+}
+@media (max-width: 629px) {
+  .popular-cars {
+    padding: 30px 16px 20px 16px;
+  }
+}
+.popular-cars__inner {
+  padding: 0;
+}
+.popular-cars__text {
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
+  align-items: center;
   gap: 20px;
-  isolation: isolate;
-  width: 760px;
-  height: 377px;
-  background: var(--color-light);
-  border-radius: var(--border-radius-large);
 }
-.card__active-image {
-  width: 427px;
-  height: 377px;
-  border-radius: var(--border-radius-medium);
+@media (max-width: 629px) {
+  .popular-cars__text {
+    width: 343px;
+    height: 55px;
+    align-items: flex-end;
+    gap: 12px;
+  }
 }
-.card__active-info {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 20px 20px 20px 0;
-  width: 313px;
-  height: 377px;
-}
-.card__active-title {
+.popular-cars__title-japan {
+  height: 48px;
+  width: 687px;
   font-family: var(--font-family-large-text);
+  font-style: normal;
   font-weight: 700;
-  font-size: 24px;
-  line-height: 30px;
-  color: var(--color-dark);
-  padding-bottom: 16px;
-  width: 293px;
-  height: 46px;
-}
-.card__active-characteristics {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 8px;
-  width: 293px;
-  height: 132px;
-  margin-bottom: 60px;
-}
-.card__active-name {
-  font-family: var(--font-family-small-text);
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 20px;
-  color: var(--color-grey-description);
-}
-.card__active-meaning {
-  display: flex;
-  justify-content: space-between;
-  width: 293px;
-  height: 20px;
-  font-family: var(--font-family-small-text);
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 40px;
+  line-height: 120%;
+  text-transform: uppercase;
   color: var(--color-dark);
 }
-.card__active-price {
+@media (max-width: 1124px) {
+  .popular-cars__title-japan {
+    width: 465px;
+    height: 40px;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 35px;
+  }
+}
+@media (max-width: 629px) {
+  .popular-cars__title-japan {
+    width: 265px;
+    height: 70px;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 35px;
+  }
+}
+.popular-cars__title-china {
+  height: 48px;
   font-family: var(--font-family-large-text);
+  font-style: normal;
   font-weight: 700;
-  font-size: 28px;
-  line-height: 35px;
+  font-size: 40px;
+  line-height: 120%;
+  text-transform: uppercase;
   color: var(--color-dark);
-  width: 154px;
-  height: 35px;
 }
-.card__active-contact {
+@media (max-width: 1124px) {
+  .popular-cars__title-china {
+    width: 465px;
+    height: 40px;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 35px;
+  }
+}
+@media (max-width: 629px) {
+  .popular-cars__title-china {
+    width: 233px;
+    height: 70px;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 35px;
+  }
+}
+.popular-cars__title-korea {
+  height: 48px;
+  font-family: var(--font-family-large-text);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 120%;
+  text-transform: uppercase;
+  color: var(--color-dark);
+}
+@media (max-width: 1124px) {
+  .popular-cars__title-korea {
+    width: 465px;
+    height: 40px;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 35px;
+  }
+}
+@media (max-width: 629px) {
+  .popular-cars__title-korea {
+    width: 235px;
+    height: 70px;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 35px;
+  }
+}
+.popular-cars__first-child {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
-  gap: 16px;
-  margin-top: 16px;
-  width: 293px;
-  height: 48px;
+  justify-content: space-between;
 }
-.card__active-button {
-  padding: 14px 40px;
-  width: 197px;
-  height: 48px;
-  border-radius: var(--border-radius-small);
-}
-.card__passive-body {
+.popular-cars__japan {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  padding: 0 0 20px;
-  gap: 16px;
-  isolation: isolate;
-  width: 312px;
-  height: 377px;
-  background: var(--color-light);
-  border-radius: var(--border-radius-large);
+  gap: 39px;
+  margin-bottom: 120px;
 }
-.card__passive-image {
-  position: relative;
-  width: 312px;
-  height: 232px;
+@media (max-width: 1124px) {
+  .popular-cars__japan {
+    margin-bottom: 32px;
+    gap: 32px;
+  }
 }
-.card__passive-title {
-  font-family: var(--font-family-small-text);
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 25px;
-  color: var(--color-dark);
-  padding-left: 20px;
-  width: 272px;
-  height: 25px;
+@media (max-width: 629px) {
+  .popular-cars__japan {
+    margin-bottom: 32px;
+    gap: 32px;
+  }
 }
-.card__passive-description {
+.popular-cars__china {
+  display: flex;
+  flex-direction: column;
+  gap: 39px;
+  margin-bottom: 120px;
+}
+@media (max-width: 1124px) {
+  .popular-cars__china {
+    margin-bottom: 32px;
+    gap: 32px;
+  }
+}
+@media (max-width: 629px) {
+  .popular-cars__china {
+    margin-bottom: 32px;
+    gap: 32px;
+  }
+}
+.popular-cars__korea {
+  display: flex;
+  flex-direction: column;
+  gap: 39px;
+  padding-bottom: 100px;
+}
+@media (max-width: 1124px) {
+  .popular-cars__korea {
+    padding-bottom: 20px;
+    gap: 32px;
+  }
+}
+@media (max-width: 629px) {
+  .popular-cars__korea {
+    padding-bottom: 20px;
+    gap: 32px;
+  }
+}
+.popular-cars__flag {
+  width: 57px;
+  height: 36px;
+}
+@media (max-width: 1124px) {
+  .popular-cars__flag {
+    width: 52px;
+    height: 31px;
+    margin-bottom: 6px;
+  }
+}
+@media (max-width: 629px) {
+  .popular-cars__flag {
+    width: 37px;
+    height: 24px;
+    margin-bottom: 6px;
+  }
+}
+@media (max-width: 1124px) {
+  .popular-cars__arrow {
+    display: none;
+  }
+}
+@media (max-width: 629px) {
+  .popular-cars__arrow {
+    display: none;
+  }
+}
+.popular-cars__line {
   display: none;
 }
-.card__passive-footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-left: 20px;
-  gap: 16px;
-  width: 292px;
-  height: 40px;
+@media (max-width: 629px) {
+  .popular-cars__line {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 32px 12px 16px;
+    left: -16px;
+    width: 150%;
+    height: 52px;
+    background: var(--color-light);
+  }
 }
-.card__passive-price {
-  font-family: var(--font-family-large-text);
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 25px;
-  color: var(--color-dark);
-}
-.card__passive-outline {
-  display: none;
-}
-.card__image-metric {
-  position: absolute;
-  display: flex;
-  flex-direction: row;
-}
-.card__year {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 4px 14px;
-  gap: 10px;
-  position: absolute;
-  height: 28px;
-  left: 16px;
-  top: 16px;
-  background: rgba(235, 235, 240, 0.12);
-  -webkit-backdrop-filter: blur(16px);
-          backdrop-filter: blur(16px);
-  border-radius: var(--border-radius);
-  font-family: var(--font-family-small-text);
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 20px;
-  text-align: right;
-  color: var(--color-light);
-}
-.card__type {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 4px 12px;
-  gap: 10px;
-  position: absolute;
-  width: 44px;
-  height: 28px;
-  left: 367px;
-  top: 16px;
-  background: var(--color-type-green);
-  -webkit-backdrop-filter: blur(16px);
-          backdrop-filter: blur(16px);
-  border-radius: var(--border-radius);
-  cursor: pointer;
-}
-.card__type:hover .card__tooltip {
-  opacity: 1;
-  visibility: visible;
-}
-.card__tooltip {
-  position: absolute;
-  top: 125%;
-  left: 10%;
-  transform: translateX(-50%);
-  z-index: 10;
-  opacity: 0;
-  height: 26px;
-  width: 77px;
-  visibility: hidden;
-  transition: opacity 0.3s ease, visibility 0.3s ease;
-  pointer-events: none;
-  background: var(--color-light);
-  text-align: center;
-  -webkit-backdrop-filter: blur(16px);
-          backdrop-filter: blur(16px);
-  border-radius: var(--border-radius);
-  font-family: var(--font-family-small-text);
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 18px;
-  color: var(--color-grey-description-alt);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+@media (max-width: 629px) {
+  .popular-cars__line-tel {
+    margin: 0 auto;
+    width: 130px;
+    height: 18px;
+    font-family: var(--font-family-small-text);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    color: var(--color-dark);
+  }
 }
 
 .hero-header {
@@ -1127,53 +1147,6 @@ a {
 .contacts__field-input:user-invalid:invalid:not(:focus),
 .contacts__textarea:user-invalid:invalid:not(:focus) {
   border: 2px solid #ED3535;
-}
-
-.popular-cars {
-  padding-top: 100px;
-  background-color: var(--color-grey-addition);
-}
-.popular-cars__inner {
-  padding: 0;
-}
-.popular-cars__text {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-.popular-cars__title {
-  height: 48px;
-  font-family: var(--font-family-large-text);
-  font-style: normal;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 120%;
-  text-transform: uppercase;
-  color: var(--color-dark);
-}
-.popular-cars__first-child {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-}
-.popular-cars__japan {
-  display: flex;
-  flex-direction: column;
-  gap: 39px;
-  margin-bottom: 120px;
-}
-.popular-cars__china {
-  display: flex;
-  flex-direction: column;
-  gap: 39px;
-  margin-bottom: 120px;
-}
-.popular-cars__korea {
-  display: flex;
-  flex-direction: column;
-  gap: 39px;
-  padding-bottom: 100px;
 }
 
 .hero {
@@ -2131,169 +2104,11 @@ a {
   width: 150%;
 }
 
-.about-us__inner {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding-top: 100px;
-  padding-bottom: 100px;
-  gap: 52px;
-  width: 1320px;
-}
-.about-us__body {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  gap: 24px;
-  width: 1320px;
-  height: 481px;
-}
-.about-us__text {
-  height: 239px;
-}
-.about-us__text-title {
-  width: 648px;
-  height: 47px;
-  font-family: var(--font-family-large-text);
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 120%;
-  text-transform: uppercase;
-  color: var(--color-dark);
-  margin-bottom: 32px;
-}
-.about-us__text-description {
-  width: 648px;
-  font-family: var(--font-family-small-text);
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 120%;
-  color: var(--color-dark-description);
-  margin-bottom: 16px;
-}
-.about-us__positive {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 16px;
-  margin: 52px 0;
-  width: 648px;
-  height: 62px;
-}
-.about-us__characteristics, .about-us__characteristics-end {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding-left: 16px;
-  gap: 2px;
-  border-left: 1px solid #CDCDD2;
-  width: 220px;
-  height: 40px;
-}
-.about-us__characteristics-title, .about-us__characteristics-end-title {
-  width: 184px;
-  height: 40px;
-  font-family: var(--font-family-large-text);
-  font-weight: 500;
-  font-size: 32px;
-  line-height: 40px;
-  text-align: center;
-  color: var(--color-dark);
-}
-.about-us__characteristics-description, .about-us__characteristics-end-description {
-  width: 184px;
-  height: 20px;
-  font-family: var(--font-family-small-text);
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 20px;
-  text-align: center;
-  color: var(--color-dark);
-}
-.about-us__characteristics-end {
-  border-right: 1px solid var(--color-border-light);
-}
-.about-us__plus {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  padding: 20px 32px;
-  gap: 2px;
-  height: 102px;
-  background: var(--color-grey-addition);
-  border-radius: var(--border-radius);
-  width: 262.25px;
-}
-.about-us__plus-title {
-  height: 40px;
-  font-family: var(--font-family-large-text);
-  font-weight: 500;
-  font-size: 32px;
-  line-height: 40px;
-  color: var(--color-dark);
-}
-.about-us__plus-description {
-  height: 20px;
-  font-family: var(--font-family-small-text);
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 20px;
-  color: var(--color-dark);
-}
-.about-us__addvantages {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 12px;
-  width: 1320px;
-  height: 102px;
-  flex: none;
-  order: 1;
-  align-self: stretch;
-  flex-grow: 0;
-}
-.about-us__logo {
-  width: 223px;
-  height: 101px;
-  padding: 0 32px;
-}
-.about-us__contact {
-  position: relative;
-  width: 100px;
-  top: 421px;
-  left: 16px;
-  z-index: 3;
-}
-.about-us__image-photo {
-  position: absolute;
-  width: 648px;
-  height: 481px;
-  top: 0;
-  z-index: 2;
-}
-.about-us__button {
-  height: 76px;
-}
-.about-us__rating {
-  height: 76px;
-}
-.about-us__image {
-  position: relative;
-  width: 648px;
-  height: 481px;
-}
-.about-us__icon {
-  width: 44px !important;
-  height: 44px !important;
-}
-
 .icon__wp {
-  width: 32px;
-  height: 32px;
+  width: 28px;
+  height: 28px;
   color: var(--color-type-green);
+  margin-top: 5px;
 }
 @media (hover: hover) {
   .icon__wp:hover {
@@ -2306,8 +2121,9 @@ a {
   }
 }
 .icon__tg {
-  width: 32px;
-  height: 32px;
+  width: 28px;
+  height: 28px;
+  margin-top: 5px;
   color: var(--color-type-blue-alt);
 }
 @media (hover: hover) {
@@ -2630,6 +2446,16 @@ a {
   background: var(--color-light) !important;
   border-radius: var(--border-radius) !important;
 }
+@media (max-width: 629px) {
+  .card-slider__slide {
+    width: 312px !important;
+  }
+}
+@media (max-width: 1124px) {
+  .card-slider__slide {
+    width: 312px !important;
+  }
+}
 .card-slider__slide:not(.is-active) {
   flex-direction: column !important;
   align-items: flex-start;
@@ -2802,6 +2628,7 @@ a {
 .header__contact {
   display: flex;
   flex-direction: row;
+  align-items: center;
   gap: 24px;
 }
 .header__contact-social {
@@ -2810,6 +2637,8 @@ a {
   justify-content: center;
   align-items: center;
   gap: 8px;
+  width: 64px;
+  height: 28px;
 }
 .header__button {
   height: 40px;
@@ -2821,4 +2650,593 @@ a {
 
 .header.hide {
   transform: translateY(-100%);
+}
+
+.card {
+  transition: transform 0.4s ease;
+  width: auto;
+  flex-shrink: 0;
+  scroll-snap-align: start;
+}
+.card__active {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 20px;
+  isolation: isolate;
+  width: 760px;
+  height: 377px;
+  background: var(--color-light);
+  border-radius: var(--border-radius-large);
+}
+.card__active-image {
+  width: 427px;
+  height: 377px;
+  border-radius: var(--border-radius-medium);
+}
+.card__active-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px 20px 20px 0;
+  width: 313px;
+  height: 377px;
+}
+.card__active-title {
+  font-family: var(--font-family-large-text);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: var(--color-dark);
+  padding-bottom: 16px;
+  width: 293px;
+  height: 46px;
+}
+.card__active-characteristics {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  width: 293px;
+  height: 132px;
+  margin-bottom: 60px;
+}
+.card__active-name {
+  font-family: var(--font-family-small-text);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--color-grey-description);
+}
+.card__active-meaning {
+  display: flex;
+  justify-content: space-between;
+  width: 293px;
+  height: 20px;
+  font-family: var(--font-family-small-text);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--color-dark);
+}
+.card__active-price {
+  font-family: var(--font-family-large-text);
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 35px;
+  color: var(--color-dark);
+  width: 154px;
+  height: 35px;
+}
+.card__active-contact {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 16px;
+  width: 293px;
+  height: 48px;
+}
+.card__active-button {
+  padding: 14px 40px;
+  width: 197px;
+  height: 48px;
+  border-radius: var(--border-radius-small);
+}
+.card__passive-body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0 0 20px;
+  gap: 16px;
+  isolation: isolate;
+  width: 312px;
+  height: 377px;
+  background: var(--color-light);
+  border-radius: var(--border-radius-large);
+}
+.card__passive-image {
+  position: relative;
+  width: 312px;
+  height: 232px;
+}
+.card__passive-title {
+  font-family: var(--font-family-small-text);
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 25px;
+  color: var(--color-dark);
+  padding-left: 20px;
+  width: 272px;
+  height: 25px;
+}
+.card__passive-description {
+  display: none;
+}
+.card__passive-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 20px;
+  gap: 16px;
+  width: 292px;
+  height: 40px;
+}
+.card__passive-price {
+  font-family: var(--font-family-large-text);
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+  color: var(--color-dark);
+}
+.card__passive-outline {
+  display: none;
+}
+.card__image-metric {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+}
+.card__year {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 14px;
+  gap: 10px;
+  position: absolute;
+  height: 28px;
+  left: 16px;
+  top: 16px;
+  background: rgba(235, 235, 240, 0.12);
+  -webkit-backdrop-filter: blur(16px);
+          backdrop-filter: blur(16px);
+  border-radius: var(--border-radius);
+  font-family: var(--font-family-small-text);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: right;
+  color: var(--color-light);
+}
+.card__type {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 12px;
+  gap: 10px;
+  position: absolute;
+  width: 44px;
+  height: 28px;
+  left: 367px;
+  top: 16px;
+  background: var(--color-type-green);
+  -webkit-backdrop-filter: blur(16px);
+          backdrop-filter: blur(16px);
+  border-radius: var(--border-radius);
+  cursor: pointer;
+}
+.card__type:hover .card__tooltip {
+  opacity: 1;
+  visibility: visible;
+}
+.card__tooltip {
+  position: absolute;
+  top: 125%;
+  left: 10%;
+  transform: translateX(-50%);
+  z-index: 10;
+  opacity: 0;
+  height: 26px;
+  width: 77px;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  pointer-events: none;
+  background: var(--color-light);
+  text-align: center;
+  -webkit-backdrop-filter: blur(16px);
+          backdrop-filter: blur(16px);
+  border-radius: var(--border-radius);
+  font-family: var(--font-family-small-text);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--color-grey-description-alt);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 629px) {
+  .card .card__yaer {
+    width: 67px;
+    height: 28px;
+    left: 16px;
+    top: 16px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .card .card__type {
+    right: 16px;
+    top: 16px;
+    left: 252px;
+  }
+  .card .card__contact-social {
+    display: none;
+  }
+  .card .card__active {
+    display: flex;
+    flex-direction: column !important;
+    align-items: flex-start;
+    padding: 0 0 20px;
+    gap: 16px;
+    width: 312px !important;
+    height: 377px;
+    background: var(--color-light);
+    border-radius: var(--border-radius);
+  }
+  .card .card__active-image {
+    width: 312px;
+    height: 232px;
+    border-radius: var(--border-radius);
+  }
+  .card .card__active-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 20px;
+    gap: 6px;
+    width: 312px;
+    height: 109px;
+  }
+  .card .card__active-characteristics {
+    display: none;
+  }
+  .card .card__active-contact {
+    display: flex;
+    width: 113px;
+    height: 38px;
+    margin: 0px;
+  }
+  .card .card__active-title {
+    width: 272px;
+    height: 25px;
+    font-family: var(--font-family-small-text);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+    color: var(--color-dark);
+    margin: 0;
+  }
+  .card .card__active-price {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 4px;
+    margin: 0;
+    width: 108px;
+    height: 25px;
+    font-family: var(--font-family-large-text);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    color: var(--color-dark);
+  }
+  .card .card__active-button {
+    width: 113px;
+    height: 38px;
+    border-radius: 10px;
+  }
+  .card .card__active-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    width: 272px;
+    height: 40px;
+  }
+  .card .card__passive-description {
+    display: flex;
+    font-family: var(--font-family-small-text);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    color: var(--color-grey-description);
+    padding-bottom: 14px;
+  }
+  .card .card__passive-outline {
+    display: none;
+  }
+}
+@media (max-width: 1124px) {
+  .card .card__yaer {
+    width: 67px;
+    height: 28px;
+    left: 16px;
+    top: 16px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .card .card__type {
+    right: 16px;
+    top: 16px;
+    left: 252px;
+  }
+  .card .card__contact-social {
+    display: none;
+  }
+  .card .card__active {
+    display: flex;
+    flex-direction: column !important;
+    align-items: flex-start;
+    padding: 0 0 20px;
+    gap: 16px;
+    width: 312px !important;
+    height: 377px;
+    background: var(--color-light);
+    border-radius: var(--border-radius);
+  }
+  .card .card__active-image {
+    width: 312px;
+    height: 232px;
+    border-radius: var(--border-radius);
+  }
+  .card .card__active-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 20px;
+    gap: 6px;
+    width: 312px;
+    height: 109px;
+  }
+  .card .card__active-characteristics {
+    display: none;
+  }
+  .card .card__active-contact {
+    display: flex;
+    width: 113px;
+    height: 38px;
+    margin: 0px;
+  }
+  .card .card__active-title {
+    width: 272px;
+    height: 25px;
+    font-family: var(--font-family-small-text);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+    color: var(--color-dark);
+    margin: 0;
+  }
+  .card .card__active-price {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 4px;
+    margin: 0;
+    width: 108px;
+    height: 25px;
+    font-family: var(--font-family-large-text);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    color: var(--color-dark);
+  }
+  .card .card__active-button {
+    width: 113px;
+    height: 38px;
+    border-radius: 10px;
+  }
+  .card .card__active-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    width: 272px;
+    height: 40px;
+  }
+  .card .card__passive-description {
+    display: flex;
+    font-family: var(--font-family-small-text);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    color: var(--color-grey-description);
+    padding-bottom: 14px;
+  }
+  .card .card__passive-outline {
+    display: none;
+  }
+}
+
+.about-us__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  gap: 52px;
+  width: 1320px;
+}
+.about-us__body {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  width: 1320px;
+  height: 481px;
+}
+.about-us__text {
+  height: 239px;
+}
+.about-us__text-title {
+  width: 648px;
+  height: 47px;
+  font-family: var(--font-family-large-text);
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 120%;
+  text-transform: uppercase;
+  color: var(--color-dark);
+  margin-bottom: 32px;
+}
+.about-us__text-description {
+  width: 648px;
+  font-family: var(--font-family-small-text);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 120%;
+  color: var(--color-dark-description);
+  margin-bottom: 16px;
+}
+.about-us__positive {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+  margin: 52px 0;
+  width: 648px;
+  height: 62px;
+}
+.about-us__characteristics, .about-us__characteristics-end {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-left: 16px;
+  gap: 2px;
+  border-left: 1px solid #CDCDD2;
+  width: 220px;
+  height: 40px;
+}
+.about-us__characteristics-title, .about-us__characteristics-end-title {
+  width: 184px;
+  height: 40px;
+  font-family: var(--font-family-large-text);
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 40px;
+  text-align: center;
+  color: var(--color-dark);
+}
+.about-us__characteristics-description, .about-us__characteristics-end-description {
+  width: 184px;
+  height: 20px;
+  font-family: var(--font-family-small-text);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: var(--color-dark);
+}
+.about-us__characteristics-end {
+  border-right: 1px solid var(--color-border-light);
+}
+.about-us__plus {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px 32px;
+  gap: 2px;
+  height: 102px;
+  background: var(--color-grey-addition);
+  border-radius: var(--border-radius);
+  width: 262.25px;
+}
+.about-us__plus-title {
+  height: 40px;
+  font-family: var(--font-family-large-text);
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 40px;
+  color: var(--color-dark);
+}
+.about-us__plus-description {
+  height: 20px;
+  font-family: var(--font-family-small-text);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--color-dark);
+}
+.about-us__addvantages {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+  width: 1320px;
+  height: 102px;
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+}
+.about-us__logo {
+  width: 223px;
+  height: 101px;
+  padding: 0 32px;
+}
+.about-us__contact {
+  position: relative;
+  width: 100px;
+  height: 44px;
+  top: 421px;
+  left: 16px;
+  z-index: 3;
+}
+.about-us__image-photo {
+  position: absolute;
+  width: 648px;
+  height: 481px;
+  top: 0;
+  z-index: 2;
+}
+.about-us__button {
+  height: 76px;
+}
+.about-us__rating {
+  height: 76px;
+}
+.about-us__image {
+  position: relative;
+  width: 648px;
+  height: 481px;
+}
+.about-us__icon {
+  width: 44px !important;
+  height: 44px !important;
 }/*# sourceMappingURL=styles.css.map */
