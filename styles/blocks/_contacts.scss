@@ -380,13 +380,13 @@
         display: block;
         width: 327px;
         height: 25px;
-        font-family: 'Wix Madefor Display';
+        font-family: var(--font-family-large-text);
         font-style: normal;
         font-weight: 700;
         font-size: 20px;
         line-height: 25px;
         text-transform: uppercase;
-        color: #252533;
+        color: var(--color-dark);
 
       }
     }

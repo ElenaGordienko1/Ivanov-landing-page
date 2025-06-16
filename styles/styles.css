@@ -570,8 +570,9 @@ a {
     display: flex;
     position: relative;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
+    gap: 30px;
     padding: 12px 32px 12px 16px;
     left: -16px;
     width: 150%;
@@ -1249,13 +1250,13 @@ a {
     display: block;
     width: 327px;
     height: 25px;
-    font-family: "Wix Madefor Display";
+    font-family: var(--font-family-large-text);
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
     line-height: 25px;
     text-transform: uppercase;
-    color: #252533;
+    color: var(--color-dark);
   }
 }
 .contacts__form-description-mobile {
