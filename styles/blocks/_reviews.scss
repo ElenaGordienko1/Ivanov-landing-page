@@ -9,6 +9,11 @@
     background: var(--color-light);
     position: relative;
     overflow-x: visible;
+
+    @include mobile{
+      padding: 20px 16px 0px 16px;
+      gap: 20px;
+    }
   }
 
   &__text {
@@ -16,6 +21,15 @@
     flex-direction: row;
     gap: 25px;
     align-items: center;
+
+    @include mobile{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 6px;
+      width: 375px;
+      height: 72px;
+    }
   }
 
   &__title {
@@ -28,6 +42,14 @@
     line-height: 120%;
     text-transform: uppercase;
     color: var(--color-dark);
+
+    @include mobile{
+      width: 343px;
+      height: 30px;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 30px;
+    }
   }
 
   &__description {
@@ -39,6 +61,17 @@
     font-size: 14px;
     line-height: 120%;
     color: var(--color-grey-description-alt);
+
+    @include mobile{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 0px;
+      gap: 10px;
+
+      width: 283px;
+      height: 36px;
+    }
   }
 
   &__grade {
@@ -48,6 +81,10 @@
     gap: 24px;
     height: 28px;
 
+    @include mobile{
+      gap:12px;
+    }
+
     &-social {
       display: flex;
       flex-direction: row;
@@ -55,6 +92,16 @@
       gap: 12px;
       height: 23px;
       border-radius: 8px;
+
+      @include mobile{
+        justify-content: center;
+        padding: 10px 0px;
+        gap: 12px;
+        width: 106px;
+        height: 42px;
+        background: var(--color-grey-addition);
+        border-radius: 8px;
+      }
     }
   }
 
@@ -75,6 +122,10 @@
     @include hover{
       color: var(--color-accent);
     }
+
+    @include desktop{
+      display: none;
+    }
     
   }
 
@@ -92,6 +143,10 @@
     &-left {
       background: var(--color-grey-addition);
     }
+
+    @include desktop{
+      display: none;
+    }
   }
 
   &__image {
@@ -101,12 +156,22 @@
     overflow: hidden;
     position: relative;
 
+    @include mobile{
+      width: 284px;
+      height: 158px;
+      border-radius: 12px;
+    }
+
     &-photo {
       width: 424px;
       position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
+
+      @include mobile{
+        width: 284px;
+      }
     }
   }
 
@@ -119,6 +184,13 @@
     width: 424px;
     height: 264px;
 
+    @include mobile{
+      padding: 0px 16px;
+      gap: 16px;
+      width: 284px;
+      height: 134px;
+    }
+
     &-rating {
       display: flex;
       flex-direction: row;
@@ -126,6 +198,11 @@
       gap: 8px;
       width: 384px;
       height: 25px;
+
+      @include mobile{
+        width: 252px;
+        height: 20px;
+      }
     }
 
     &-text {
@@ -134,6 +211,10 @@
       justify-content: flex-start;
       align-items: center;
       gap: 16px;
+
+      @include mobile{
+        width: 252px;
+      }
     }
 
     &-footer {
@@ -144,6 +225,12 @@
       gap: 24px;
       width: 384px;
       height: 20px;
+
+      @include mobile{
+        gap: 24px;
+        width: 252px;
+        height: 18px;
+      }
     }
   }
 
@@ -167,9 +254,23 @@
     margin-right: 20px !important;
     margin-bottom: 100px !important;
     box-shadow: var(--shadow-default);
+
+    @include mobile{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 0px 0px 16px;
+      gap: 12px;
+      width: 284px !important;
+      height: 320px !important;
+      border-radius: 12px;
+      margin-bottom: 40px !important;
+
+    }
   }
 
   &__text {
+
     &-review {
       width: 384px;
       height: 138px;
@@ -179,6 +280,15 @@
       font-size: 18px;
       line-height: 23px;
       color: var(--color-dark-description);
+
+      @include mobile{
+        width: 252px;
+        height: 72px;
+        overflow: hidden;
+        font-size: 14px;
+        line-height: 18px;
+
+      }
     }
 
     &-data {
@@ -190,6 +300,14 @@
       font-size: 16px;
       line-height: 20px;
       color: var(--color-grey-description-alt);
+
+      @include mobile{
+        width: 74px;
+        height: 18px;
+        font-size: 14px;
+        line-height: 18px;
+
+      }
     }
 
     &-link {
@@ -210,6 +328,16 @@
       @include hover{
         color: var(--color-accent);
       }
+
+      @include mobile{
+        padding: 0px;
+        gap: 4px;
+        width: 147px;
+        height: 18px;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 18px;
+      }
     }
   }
 
@@ -222,6 +350,11 @@
       gap: 8px;
       width: 384px;
       height: 25px;
+
+      @include mobile{
+        width: 252px;
+        height: 20px;
+      }
     }
 
     &-left {

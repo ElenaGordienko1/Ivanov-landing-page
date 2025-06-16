@@ -321,8 +321,10 @@
             color: var(--color-dark);
 
             @include tablet{
+                width: auto;
                 font-size: 14px;
                 line-height: 18px;
+                white-space: nowrap;
             }
 
             @include mobile{
