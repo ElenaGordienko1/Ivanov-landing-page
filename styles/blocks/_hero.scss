@@ -523,3 +523,8 @@
 
     }
 }
+
+.hero__image.visible {
+  opacity: 1;
+  transform: translateX(0);
+}

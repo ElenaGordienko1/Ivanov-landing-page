@@ -226,10 +226,9 @@
       align-items: flex-start;
       padding: 20px;
       gap: 20px;
-      width: auto;
+      width: 100%;
       height:auto;
       border-radius: 16px;
-      width: 100%;
     }
 
     @include mobile{
@@ -242,6 +241,15 @@
       width: auto;
       height:auto;
       border-radius: 16px;
+    }
+  }
+
+  &__contact-social{
+    @include tablet{
+      display:none !important;
+    }
+    @include mobile{
+      display: flex;
     }
   }
 
@@ -345,8 +353,8 @@
       margin-top: 16px;
 
       @include tablet{
-        gap: 16px;
-        width: 303px;
+        gap: 7px;
+        width: 100%;
         margin-top: 16px;
       }
 
@@ -408,7 +416,7 @@
     border-radius: var(--border-radius-small);
 
     @include tablet{
-      width: 303px;
+      width: 290px;
       height: 52px;
       padding: 0px;
     }
@@ -764,4 +772,41 @@
     }
   }
 
+  &__image{
+    margin-left: auto;
+    position: relative;
+
+    @include tablet{
+        position: absolute;
+    }
+
+    @include mobile{
+        position: absolute;
+    }
+
+    &-car{
+        position: absolute;
+        right: 0px;
+        z-index: 10;
+        top:40px;
+        left:-623px;
+        bottom: 0px;
+        right: 0px;
+
+        @include tablet{
+            width: 900px;
+            top: 190px;
+            left:0;
+        
+        }
+
+        @include mobile{
+            width: 580px;
+            top: 160px;
+            left:0;
+        
+        }
+        
+    }
+  }
 }
