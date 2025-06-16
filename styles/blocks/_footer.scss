@@ -39,6 +39,12 @@
     width: 100%;
     height: 23px;
 
+    @include tablet{
+      flex-direction: column;
+      height: auto;
+      gap:32px;
+    }
+
     @include mobile{
       flex-direction: column;
       height: auto;
@@ -48,13 +54,23 @@
 
   &__hero-header-inner{
 
+    @include tablet{
+      gap:8px;
+      width: 100%;
+    }
+
     @include mobile{
       flex-direction: column;
       padding: 0px;
       gap:20px;
+      width: 100%;
     }
   }
   &__hero-header-contact{
+
+    @include tablet{
+      gap:5px;
+    }
 
     @include mobile{
       width: 100%;
@@ -66,19 +82,60 @@
     }
   }
 
+  &__hero-header__left{
+    @include tablet{
+      gap:20px;
+    }
+  }
+
   &__hero-header-contact-button{
     @include mobile{
       width: 259px;
     }
   }
 
-  &__menu {
-    margin: 0;
+  &__header{
     @include mobile{
       width: 100%;
+    }
+  }
+
+  &__menu {
+    margin: 0;
+
+    @include tablet{
+      display: flex;
+      width: 100%;
       height: auto;
+      align-items: center;
+      justify-content: center;
+    }
+
+    @include mobile{
+      display: flex;
+      width: 100%;
+      height: auto;
+      align-items: center;
+      justify-content: center;
     }
     &-list{
+
+      @include desktop{
+        gap: 16px;
+      }
+
+      @include tablet{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        padding: 0px;
+        gap: 24px;
+        width: 100%;
+        height: 108px;
+      }
+
       @include mobile{
         display: flex;
         flex-direction: column-reverse;
@@ -116,11 +173,28 @@
       line-height: 20px;
       color: #252533;
 
+      @include desktop{
+        width: auto;
+      }
 
     }
   }
 
   &__grade-social{
+
+    @include tablet{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      padding: 10px 0px;
+      gap: 12px;
+      width: 106px;
+      height: 42px;
+      background: #F7F7FA;
+      border-radius: 8px;
+    }
+
     @include mobile{
       display: flex;
       flex-direction: row;
@@ -140,6 +214,7 @@
 
     @include mobile{
       height: auto;
+      width: 100%;
     }
   }
 
@@ -167,6 +242,18 @@
     }
 
     &-right{
+
+      @include tablet{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 16px;
+
+        width: 343px;
+        height: 77px;
+      }
+
       @include mobile{
         display: flex;
         flex-direction: column;
@@ -176,6 +263,12 @@
 
         width: 343px;
         height: 77px;
+      }
+    }
+
+    &-left{
+      @include tablet{
+        display: none;
       }
     }
 
