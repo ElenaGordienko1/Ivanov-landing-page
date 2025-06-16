@@ -3,10 +3,31 @@
   padding-top: 40px;
   padding-bottom: 40px;
 
+  @include mobile{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 40px 16px;
+      gap: 32px;
+      width: 100%;
+      height: 521px;
+  }
+
   &__inner {
     display: flex;
     flex-direction: column;
     gap: 52px;
+
+    @include mobile{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 0px;
+      gap: 32px;
+      width: 100%;
+      height: 521px;
+    }
+
   }
 
   &__link {
@@ -15,15 +36,111 @@
     justify-content: space-between;
     align-items: center;
     margin-top: 16px;
+    width: 100%;
     height: 23px;
+
+    @include mobile{
+      flex-direction: column;
+      height: auto;
+      gap:32px;
+    }
+  }
+
+  &__hero-header-inner{
+
+    @include mobile{
+      flex-direction: column;
+      padding: 0px;
+      gap:20px;
+    }
+  }
+  &__hero-header-contact{
+
+    @include mobile{
+      width: 100%;
+      gap:16px;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      padding-bottom: 24px;
+      border-bottom: 1px solid var(--color-border);
+    }
+  }
+
+  &__hero-header-contact-button{
+    @include mobile{
+      width: 259px;
+    }
   }
 
   &__menu {
     margin: 0;
+    @include mobile{
+      width: 100%;
+      height: auto;
+    }
+    &-list{
+      @include mobile{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        padding: 0px;
+        gap: 24px;
+        width: 343px;
+        height: 108px;
+      }
+      
+    }
+
+    &-item{
+      @include mobile{
+        width: 166px;
+        height: 20px;
+        font-family: 'Mulish';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        color: #252533;
+      }
+    }
+
+    &-link{
+      width: 166px;
+      height: 20px;
+      font-family: 'Mulish';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 20px;
+      color: #252533;
+
+
+    }
+  }
+
+  &__grade-social{
+    @include mobile{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      padding: 10px 0px;
+      gap: 12px;
+      width: 106px;
+      height: 42px;
+      background: #F7F7FA;
+      border-radius: 8px;
+    }
   }
 
   &__body {
     background-color: var(--color-grey-addition-alt);
+
+    @include mobile{
+      height: auto;
+    }
   }
 
   &__info {
@@ -49,9 +166,29 @@
       white-space: nowrap;
     }
 
+    &-right{
+      @include mobile{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 16px;
+
+        width: 343px;
+        height: 77px;
+      }
+    }
+
     &-text{
       @include hover {
         color: var(--color-accent);
+      }
+    }
+
+    &-text-mobile{
+      display: none;
+      @include mobile{
+        display: block;
       }
     }
   }
@@ -60,10 +197,28 @@
   &__button {
     width: 196px;
     height: 48px;
+
+    @include mobile{
+      width: 259px;
+      height: 46px;
+    }
   }
 
   &__icon{
     width: 36px !important;
     height: 36px !important;
+
+    @include mobile{
+      width: 28px !important;
+      height: 28px !important;
+    }
+  }
+
+  &__logo{
+    @include mobile{
+      width: 119px;
+      height: 36px;
+
+    }
   }
 }
